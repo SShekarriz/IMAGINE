@@ -1,20 +1,22 @@
 ---
-title: "IMAGINE MICROBIOME PROFILE"
-author: "Sharok"
+title: "IMAGINE Microbiome Profile"
+author: "Surette Laboratory"
 date: "5/12/2023"
 output: html_document
 ---
 
-```{r}
+```{r, echo=FALSE, message=FALSE}
 
 library(tidyverse)
 library(phyloseq)
+library(AfterSl1p)
+
 
 ```
 
 ## Importing background data
 
-```{r}
+```{r, echo=FALSE, message=FALSE}
 
 #Importing the dada2 files
 seqtab.nochim <- read.csv("data/seqtab_nochim_transposed_IMG-HC_v34.csv")
@@ -30,7 +32,17 @@ ps <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=T),
                tax_table(as.matrix(taxa)))
 
 # adding mapfile later in here:
-data.frame(Study_ID= sample_names(ps)) -> ps_mapfile
+data.frame(Study_ID= sample_names(ps),
+           Status= paste("Healthy")) -> ps_mapfile
+
+# just manually add one random imagine number as study participants for
+# generating a report
+
+sample = "IMG106"
+
+ps_mapfile %>%
+  mutate(Status= case_when(Study_ID == sample ~ paste(Study_ID),
+                           TRUE ~ paste(Status))) -> ps_mapfile
 
 row.names(ps_mapfile) <- ps_mapfile$Study_ID
 sample_data(ps) <- ps_mapfile
@@ -39,23 +51,66 @@ ps
 
 ```
 
+## Microbial Composition
+
+Here, you can see relative abundance of your gut bacteria
+```{r, echo=FALSE, message=FALSE}
+
+ps_i <- subset_samples(ps, Status  == "IMG106")
+
+ps_i_rel <- ps_i %>%
+transform_sample_counts(function(x) {x/sum(x)} )
+
+ps_gen_df <- make_phy_df(ps_i_rel, rank = "Genus", cutoff = 0.001, 
+            prop = TRUE, count = FALSE)
+
+#Only show the participant of interest:
+ps_gen_df %>% 
+  filter(Study_ID == sample) -> ps_gen_df
+
+plot_tax_bar(ps_gen_df, rank = "Family", sample = "Study_ID", 
+             leglen = 10, legloc = "right") 
 
 
-
-
-
-```{r}
-
-
-description <- read.csv("data/description.txt", sep = "\t")
 
 
 ```
 
 
-```{r}
+## Microbiome diversity
 
+This figure shows the diversity of microbiome in healthy individual. Each dot
+shows one IMAGINE participant and your microbiome profile is shown in green.
+
+```{r, echo=FALSE, message=FALSE}
+
+ps_rel <- ps %>%
+transform_sample_counts(function(x) {x/sum(x)} )# Transform to rel. abundance
+
+bray_dis_ps = phyloseq::distance(ps_rel, method = 'bray')
+bray_ord_ps = ordinate(ps_rel, method = 'PCoA', distance = bray_dis_ps)
+
+
+plot_ordination(ps_rel, bray_ord_ps, color="Status") +
+    scale_color_manual(values = c("Healthy" = "#bdbdbd",
+                                  "IMG106" = "#1a9850")) +
+    geom_point(alpha = 0.5, size=3) +
+    ggplot2::theme_classic() +
+    theme(legend.title = element_blank(),
+          legend.text  = element_text(size=15),
+        text = element_text(size = 10),
+        legend.position = "right")
 
 
 ```
+
+
+```{r, echo=FALSE, message=FALSE}
+
+
+#description <- read.csv("data/description.txt", sep = "\t")
+
+
+```
+
 
