@@ -48,7 +48,29 @@ row.names(ps_mapfile) <- ps_mapfile$Study_ID
 sample_data(ps) <- ps_mapfile
 
 ps
+```
 
+## Clean the data
+```{r}
+summary(taxa_sums(ps))
+summary(sample_sums(ps))
+
+# Remove host sequences
+ps = prop_tax_down(ps, indic = FALSE)
+ps
+ps = subset_taxa(ps, Kingdom %in% c('Bacteria','Archaea') &
+                       !(Phylum %in% Kingdom) & 
+                     (Family != 'Mitochondria'))
+ps
+
+# Take relative abundance before any abundance filtering
+ps_rel = transform_sample_counts(ps, function(x) x/sum(x))
+ps_rel
+
+# Remove low-abundance taxa
+keep = filter_taxa(ps, function(x) mean(x) > 10)
+ps_rel_filt = prune_taxa(keep, ps_rel)
+ps_filt = prune_taxa(keep, ps)
 ```
 
 ## Microbial Composition
@@ -56,22 +78,22 @@ ps
 Here, you can see relative abundance of your gut bacteria
 ```{r, echo=FALSE, message=FALSE}
 
-ps_i <- subset_samples(ps, Status  == "IMG106")
+ps_i <- subset_samples(ps_filt, Status  == "IMG106")
 
-ps_i_rel <- ps_i %>%
-transform_sample_counts(function(x) {x/sum(x)} )
+ps_i_rel = subset_samples(ps_rel_filt, Status == 'IMG106')
 
 ps_gen_df <- make_phy_df(ps_i_rel, rank = "Genus", cutoff = 0.001, 
-            prop = TRUE, count = FALSE)
+            count = FALSE)
 
 #Only show the participant of interest:
-ps_gen_df %>% 
-  filter(Study_ID == sample) -> ps_gen_df
+# ps_gen_df %>% 
+#   filter(Study_ID == sample) -> ps_gen_df
+# you already did this filtering with the Status filter.
 
-plot_tax_bar(ps_gen_df, rank = "Family", sample = "Study_ID", 
+barplt = plot_tax_bar(ps_gen_df, rank = "Family", sample = "Study_ID", 
              leglen = 10, legloc = "right") 
 
-
+barplt
 
 
 ```
@@ -84,14 +106,11 @@ shows one IMAGINE participant and your microbiome profile is shown in green.
 
 ```{r, echo=FALSE, message=FALSE}
 
-ps_rel <- ps %>%
-transform_sample_counts(function(x) {x/sum(x)} )# Transform to rel. abundance
-
-bray_dis_ps = phyloseq::distance(ps_rel, method = 'bray')
-bray_ord_ps = ordinate(ps_rel, method = 'PCoA', distance = bray_dis_ps)
+bray_dis_ps = phyloseq::distance(ps_rel_filt, method = 'bray')
+bray_ord_ps = ordinate(ps_rel_filt, method = 'PCoA', distance = bray_dis_ps)
 
 
-plot_ordination(ps_rel, bray_ord_ps, color="Status") +
+ord_plt = plot_ordination(ps_rel_filt, bray_ord_ps, color="Status") +
     scale_color_manual(values = c("Healthy" = "#bdbdbd",
                                   "IMG106" = "#1a9850")) +
     geom_point(alpha = 0.5, size=3) +
@@ -101,7 +120,7 @@ plot_ordination(ps_rel, bray_ord_ps, color="Status") +
         text = element_text(size = 10),
         legend.position = "right")
 
-
+ord_plt
 ```
 
 
