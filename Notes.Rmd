@@ -3,55 +3,26 @@ Notes
 
 Just a place to put some notes and thoughts and test out some code.
 
+We are picturing a pdf with the orange IMAGINE light bulb logo at low saturation
+as the page background and the IMAGINE word logo up top. 
+
+Intro: What is the microbiome? What is the study?
+
+Fig 1: A: a ggplot word cloud of genera coloured by family with a low-saturation 
+colon diagram in the background. B: a taxa bar chart at the genus level, but 
+ordered and coloured within family. Consider giving mean and individual. If mean,
+surround with at least four diverse samples to show the range
+
+Fig 2: "You are here" PCoA plot with ~1000 individuals in the background and the
+participant's sample coloured and foregrounded. Maybe with a taxa pie chart
+instead of a dot? But probably not
+
+Descriptions: The top 3 families in each sample get their descriptions placed at
+the bottom of the page. Provide a link to a website that has descriptions of all
+families present in the top 10 of everyone.
+
 Setup
 -----
-
-```{r, echo=FALSE, message=FALSE}
-
-library(tidyverse)
-library(phyloseq)
-library(AfterSl1p)
-library(egg)
-
-```
-
-
-## Importing background data
-
-```{r, echo=FALSE, message=FALSE}
-
-#Importing the dada2 files
-seqtab.nochim <- read.csv("data/seqtab_nochim_transposed_IMG-HC_v34.csv")
-row.names(seqtab.nochim) <- seqtab.nochim$X
-seqtab.nochim %>% select(-X) -> seqtab.nochim
-
-# Importing taxonomic assignment
-taxa <- read.csv("data/taxa_IMG-HC_v34_silva138.csv")
-row.names(taxa) <- taxa$X
-
-#import the data into phyloseq:
-ps <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=T), 
-               tax_table(as.matrix(taxa)))
-
-# adding mapfile later in here:
-data.frame(Study_ID= sample_names(ps),
-           Status= paste("Healthy")) -> ps_mapfile
-
-# just manually add one random imagine number as study participants for
-# generating a report
-
-sample = "IMG106"
-
-ps_mapfile %>%
-  mutate(Status= case_when(Study_ID == sample ~ paste(Study_ID),
-                           TRUE ~ paste(Status))) -> ps_mapfile
-
-row.names(ps_mapfile) <- ps_mapfile$Study_ID
-sample_data(ps) <- ps_mapfile
-
-ps
-ps = prop_tax_down(ps)
-```
 
 Inset Plots
 -----------
@@ -64,47 +35,47 @@ scatterplot), we use `grid::viewport()`` apparently. Link
 
 Another (better?) option is to use the `egg` library: 
 
+### Inset the bar plot
+
 ```{r}
+library(egg)
 
-ps_rel <- ps %>%
-transform_sample_counts(function(x) {x/sum(x)} )# Transform to rel. abundance
-
-bray_dis_ps = phyloseq::distance(ps_rel, method = 'bray')
-bray_ord_ps = ordinate(ps_rel, method = 'PCoA', distance = bray_dis_ps)
-
-
-plt_ord = plot_ordination(ps_rel, bray_ord_ps, color="Status") +
-    scale_color_manual(values = c("Healthy" = "#bdbdbd",
-                                  "IMG106" = "#1a9850")) +
-    geom_point(alpha = 0.5, size=3) +
-    ggplot2::theme_classic() +
-    theme(legend.title = element_blank(),
-          legend.text  = element_text(size=15),
-        text = element_text(size = 10),
-        legend.position = "right")
-
-plt_ord
+ord_df = plot_ordination(ps_rel_filt, bray_ord_ps, justDF = TRUE)
+barplt2 = plot_tax_bar(ps_gen_df, rank = 'Family', sample = 'Study_ID',
+                       legloc = 'none') +
+    theme(axis.title = element_blank(),
+          axis.ticks = element_blank(),
+          axis.text = element_blank(),
+          line = element_blank(),
+          rect = element_blank())
+barplt2
+xpos = ord_df['IMG106', 'Axis.1']
+ypos = ord_df['IMG106', 'Axis.2']
+head(ord_df)
+ord_plt + annotation_custom(ggplotGrob(barplt2),
+                            xmin = xpos+0.0001,
+                            ymin = ypos+0.0001,
+                            xmax = xpos+0.07,
+                            ymax = ypos+0.1)
 ```
 
-```{r, echo=FALSE, message=FALSE}
+```{r}
+library(ggwordcloud)
+head(ps_gen_df)
 
-ps_i <- subset_samples(ps, Status  == "IMG106")
+ps_wc = (ps_gen_df
+         %>% group_by(Genus)
+         %>% summarize(Abundance = sum(Abundance))
+         %>% filter(Genus != 'Other'))
 
-ps_i_rel <- ps_i %>%
-transform_sample_counts(function(x) {x/sum(x)} )
+wcplt = ggplot(ps_wc, aes(label = Genus, size = Abundance)) +
+    geom_text_wordcloud() +
+    theme_minimal()
+wcplt
 
-ps_gen_df <- make_phy_df(ps_i_rel, rank = "Genus", cutoff = 0.001, 
-            prop = TRUE, count = FALSE)
-
-#Only show the participant of interest:
-ps_gen_df %>% 
-  filter(Study_ID == sample) -> ps_gen_df
-
-plt_bar = plot_tax_bar(ps_gen_df, rank = "Family", sample = "Study_ID", 
-             leglen = 10, legloc = "right") 
-
-plt_bar
-
-
+set.seed(1)
+ggwordcloud(words = ps_wc$Genus, freq = ps_wc$Abundance*10000, min.freq = 0,
+            ordered.colors = TRUE) +
+    scale_colour_manual(values = tax_colours)
 ```
 

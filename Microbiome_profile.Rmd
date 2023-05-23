@@ -2,7 +2,9 @@
 title: "IMAGINE Microbiome Profile"
 author: "Surette Laboratory"
 date: "5/12/2023"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r, echo=FALSE, message=FALSE}
@@ -19,16 +21,14 @@ library(AfterSl1p)
 ```{r, echo=FALSE, message=FALSE}
 
 #Importing the dada2 files
-seqtab.nochim <- read.csv("data/seqtab_nochim_transposed_IMG-HC_v34.csv")
-row.names(seqtab.nochim) <- seqtab.nochim$X
-seqtab.nochim %>% select(-X) -> seqtab.nochim
+seqtab.nochim <- read.csv("data/seqtab_nochim_transposed_IMG-HC_v34.csv", 
+                          row.names = 1)
 
 # Importing taxonomic assignment
-taxa <- read.csv("data/taxa_IMG-HC_v34_silva138.csv")
-row.names(taxa) <- taxa$X
+taxa <- read.csv("data/taxa_IMG-HC_v34_silva138.csv", row.names = 1)
 
 #import the data into phyloseq:
-ps <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=T), 
+ps <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=TRUE),
                tax_table(as.matrix(taxa)))
 
 # adding mapfile later in here:
@@ -76,6 +76,7 @@ ps_filt = prune_taxa(keep, ps)
 ## Microbial Composition
 
 Here, you can see relative abundance of your gut bacteria
+
 ```{r, echo=FALSE, message=FALSE}
 
 ps_i <- subset_samples(ps_filt, Status  == "IMG106")
@@ -123,6 +124,9 @@ ord_plt = plot_ordination(ps_rel_filt, bray_ord_ps, color="Status") +
 ord_plt
 ```
 
+## Inset
+
+Inset the bar plot onto the 
 
 ```{r, echo=FALSE, message=FALSE}
 
