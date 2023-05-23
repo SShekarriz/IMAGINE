@@ -24,6 +24,67 @@ families present in the top 10 of everyone.
 Setup
 -----
 
+Colours
+
+```{r}
+col_lst1=list("Lachnospiraceae" = c('#168362','#1b9e77','#21c493','#3bdead'),
+              "Ruminococcaceae" = c('#b14e02','#d95f02','#fc6f03','#fd8c35'),
+    "Bacteroidaceae"            = c('#5d58a7','#7570b3','#8e8ac1','#aeabd3'),
+    "Peptostreptococcaceae"     = c('#cf1776','#e8308f','#ed5ea8','#f28cc1'),
+    "Erysipelatoclostridiaceae" = c('#315f9b','#3d77c2','#6492ce','#8badda'),
+    "Akkermansiaceae"           = c('#cd181b','#e73235','#ec5f62','#f28d8f'),
+    "Oscillospiraceae"          = c('#014c45','#017e74','#02b1a2','#02e3d0'),
+    "Rikenellaceae"             = c('#2c3087','#383ead','#5258c7','#787dd3'),
+    "Enterobacteriaceae"        = c('#800026','#b30036','#e60045','#ff1a5e'),
+    "Christensenellaceae"       = c('#ffe41a','#ffea4d','#fff080','#fff6b3'),
+    "Bifidobacteriaceae"        = c('#86bc29','#a0d643','#b5df6d','#cae896'),
+    "[Eubacterium] coprostanoligenes group" =
+                                  c('#0af1f5','#3bf4f7','#6cf7f9','#9df9fb'),
+    "Clostridiaceae"            = c('#a54051','#bf5a6b','#cd7e8c','#dba3ad'),
+    "Streptococcaceae"          = c('#1a34ff','#4d61ff','#808eff','#b3bbff'),
+    "Monoglobaceae"             = c('#df1c07','#f83620','#fa6352','#fb8f83'),
+    "Tannerellaceae"            = c('#4a2092','#5f29bc','#7943d6','#976ddf'),
+    "Veillonellaceae"           = c('#f22690','#f556a8','#f887c1','#fbb7da'),
+    "Erysipelotrichaceae"       = c('#cb551a','#e56f34','#ea8f61','#f0af8e'),
+    "Coriobacteriaceae"         = c('#186830','#219143','#2abb56','#44d56f'))     
+```
+
+
+Custom Taxa Barchart
+--------------------
+
+```{r}
+ps_gen_df <- make_phy_df(ps_i_rel, rank = "Genus", cutoff = 0.001, 
+            count = FALSE)
+fam_cols = c('grey69',rev(tax_colours[1:(n_distinct(ps_gen_df$Family)-1)]))
+names(fam_cols) = levels(ps_gen_df$Family)
+plt_bar = plot_tax_bar(ps_gen_df, 'Family', colours = fam_cols, 
+                       sample = 'Study_ID', leglen = 10)
+plt_bar
+```
+
+
+Word Cloud
+----------
+
+```{r}
+library(ggwordcloud)
+head(ps_gen_df)
+
+ps_wc = (ps_gen_df
+         %>% group_by(Family,Genus)
+         %>% summarize(Abundance = sum(Abundance))
+         %>% filter(Genus != 'Other'))
+
+set.seed(1)
+wcplt = ggwordcloud(words = ps_wc$Genus, 
+                    freq = ps_wc$Abundance*10000, min.freq = 0,
+                    colors = fam_cols) 
+wcplt
+    scale_colour_manual(values = tax_colours)
+```
+
+
 Inset Plots
 -----------
 
@@ -57,25 +118,5 @@ ord_plt + annotation_custom(ggplotGrob(barplt2),
                             ymin = ypos+0.0001,
                             xmax = xpos+0.07,
                             ymax = ypos+0.1)
-```
-
-```{r}
-library(ggwordcloud)
-head(ps_gen_df)
-
-ps_wc = (ps_gen_df
-         %>% group_by(Genus)
-         %>% summarize(Abundance = sum(Abundance))
-         %>% filter(Genus != 'Other'))
-
-wcplt = ggplot(ps_wc, aes(label = Genus, size = Abundance)) +
-    geom_text_wordcloud() +
-    theme_minimal()
-wcplt
-
-set.seed(1)
-ggwordcloud(words = ps_wc$Genus, freq = ps_wc$Abundance*10000, min.freq = 0,
-            ordered.colors = TRUE) +
-    scale_colour_manual(values = tax_colours)
 ```
 
