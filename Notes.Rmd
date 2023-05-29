@@ -9,13 +9,13 @@ as the page background and the IMAGINE word logo up top.
 Intro: What is the microbiome? What is the study?
 
 Fig 1: A: a ggplot word cloud of genera coloured by family with a low-saturation 
-colon diagram in the background. B: a taxa bar chart at the genus level, but 
-ordered and coloured within family. Consider giving mean and individual. If mean,
-surround with at least four diverse samples to show the range
+colon diagram in the background. B: a taxa bar chart at the Family level. 
+Consider giving mean and individual. If mean, surround with at least four 
+diverse samples to show the range.
 
 Fig 2: "You are here" PCoA plot with ~1000 individuals in the background and the
 participant's sample coloured and foregrounded. Maybe with a taxa pie chart
-instead of a dot? But probably not
+instead of a dot? But probably not.
 
 Descriptions: The top 3 families in each sample get their descriptions placed at
 the bottom of the page. Provide a link to a website that has descriptions of all
@@ -23,6 +23,11 @@ families present in the top 10 of everyone.
 
 Setup
 -----
+
+The file [Setup.R](./Setup.R) contains code that imports and cleans the data,
+produces data frames for plotting taxa bar charts and PCoA charts, and generates
+the background PCoA plot, as well as the mean and four "range" bar charts for
+use with patchwork/cowplot.
 
 Taxa Barchart
 -------------

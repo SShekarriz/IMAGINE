@@ -1,0 +1,125 @@
+---
+output: pdf_document
+date: "2023-05-26"
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(phyloseq)
+library(AfterSl1p)
+library(ggwordcloud)
+library(cowplot)
+library(ggpubr)
+load('data/all_processed.RData')
+
+# set the sample
+samp = 'IMG112'
+my_df = filter(ps_df, Study_ID == samp)
+```
+
+## Introduction
+
+INTRODUCTION TO MICROBIOME AND TO THE IMAGINE STUDY
+
+## Your Sample
+
+This bar chart shows your personal fecal bacterial community. 
+Bacteria are grouped into **families** based on how closely related
+they are.
+
+The bar chart is stacked from most abundant bacterial family on the 
+bottom, to least abundant on the top, with very low-abundance 
+bacteria grouped together as "Other". Next to it is a chart showing
+the average community of all the people who participated in the study,
+and across the bottom are four anonymous individuals chosen to show
+the range of variation in this study. As you can see, it's quite wide!
+
+```{r PlotSetup}
+wcdf = (my_df
+        %>% group_by(Family, Genus)
+        %>% summarize(Abundance = 100*sum(Abundance))
+        %>% filter(Genus != 'Other', 
+                   !grepl('.*_.*',as.character(Genus)))
+        %>% arrange(desc(Abundance)))
+
+```
+
+
+```{r PlotGen}
+wcplt = ggplot(wcdf, aes(label = Genus, size = Abundance, 
+                         colour = Family)) +
+    geom_text_wordcloud() +
+    scale_colour_manual(values = fam_cols) +
+    scale_size_area(max_size = 15) +
+    theme_void() 
+    # background_image('img/gut_for_word_cloud.svg')
+
+my_bar = plot_tax_bar(my_df, 'Family', fam_cols, 'Study_ID') +
+                    
+    theme(axis.title.y = element_blank()) +
+    scale_x_discrete(labels = 'Your sample')
+
+r2 = plot_grid(NULL,s1_bar, s2_bar, s3_bar, s4_bar, nrow = 1,
+               rel_widths = c(2.1,5,5,5,5))
+r1 = plot_grid(my_bar + theme(legend.position = 'none',
+                            axis.text = element_text(size = 10)) +
+                   scale_x_discrete(position = 'top',
+                                    labels = 'Your sample'), 
+               mean_bar + theme(axis.title = element_blank(),
+                                axis.text = element_text(size = 10),
+                                axis.text.y = element_blank(),
+                                axis.ticks.y = element_blank()) +
+                   scale_x_discrete(position = 'top',
+                                    labels = 'Everyone'),
+               rel_widths = c(4,5))
+leg = get_legend(my_bar + 
+                     theme(legend.text = element_text(size = 8),
+                           legend.title = element_text(size = 10)) +
+                     guides(colour = guide_legend(reverse = TRUE),
+                            fill = guide_legend(reverse = TRUE)))
+c1 = plot_grid(r1, r2, ncol = 1, rel_heights = c(2,1))
+bar_plts = plot_grid(c1, leg, nrow = 1, rel_widths = c(4,3))
+
+```
+
+```{r BarPlotDisplay}
+bar_plts
+```
+
+
+\newpage
+
+This word cloud shows your personal bacterial community at a finer 
+level of detail. Within each family, bacteria can be subdivided into 
+several **genera** (singular, **genus**). The size of each word
+represents the relative abundance of that genus, and the colour shows
+which family that genus comes from.
+
+```{r}
+wcplt
+```
+
+\newpage
+
+## You Are Here
+
+There were over 1,000 people participating in this study! We have 
+graphed everyone together based on how similar or different their gut
+microbiomes were. In the next graph, points that are closer together
+are more similar to each other, and points that are farther apart are
+more different. Your sample is shown in green. Remember that your 
+position in this graph doesn't say anything about how healthy your
+gut microbiome is. As we've seen above, there is a wide range of 
+normal variation in the human gut.
+
+```{r, fig.width=7, fig.height=7}
+my_bray_df = filter(bray_df, Study_ID == samp)
+my_bray_plt = bray_plt +
+    geom_point(data = my_bray_df, colour = '#4b9b79', alpha = 1,
+               size = 2) +
+    geom_point(data = my_bray_df, colour = '#4b9b79', alpha = 0.5,
+               size = 4)
+my_bray_plt
+```
+
