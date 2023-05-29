@@ -46,22 +46,30 @@ ps_filt = prune_taxa(keep, ps)
 
 ps_df = make_phy_df(ps_rel_filt, rank = 'Genus', cutoff = 0.001,
                     indic = FALSE, prop = FALSE)
+tc_dark = c('#326751','#e25f1d','#5857a8','#ffff33','#3333ff','#f83620',
+            '#418abe','#fb8804','#86bc29','#f556a8','#a757a8','#69c454',
+            '#ffe41a','#3d93c2','#f73e3b','#fb9004','#b8475a','#4d4dff',
+            '#9da659','#20e3f8','#be7541','#418abe','#6a2ed1','#26f289',
+            '#468745','#a741be','#1a34ff','#c26c3d','#09d9dc','#0364e2')
 n = ceiling(n_distinct(ps_df$Family)/length(tax_colours))
 fam_cols = rep(tax_colours, n)
+fam_dark = rep(tc_dark, n)
 fam_cols = c(fam_cols[1:(n_distinct(ps_df$Family)-1)],'grey69')
+fam_dark = c(fam_dark[1:(n_distinct(ps_df$Family)-1)], 'grey69')
 names(fam_cols) = rev(levels(ps_df$Family))
+names(fam_dark) = rev(levels(ps_df$Family))
 
 # Make the mean and range plots --------------------
 
 ps_df = (ps_df
          %>% mutate(Dummy = 'All'))
-mean_bar = plot_tax_bar(ps_df, 'Family', colours = fam_cols, 
+mean_bar = plot_tax_bar(ps_df, 'Family', colours = fam_dark, 
                         sample = 'Dummy', means = TRUE,
                         legloc = 'none') +
     scale_x_discrete(labels = 'Everyone')
 mean_bar
 
-to_keep = c('ps_df', 'fam_cols', 'mean_bar')
+to_keep = c('ps_df', 'fam_cols', 'mean_bar', 'fam_dark')
 
 # Do the ordination --------------
 
@@ -88,20 +96,20 @@ s2 = rownames(bray_df %>% filter(Axis.1 == max(Axis.1)))
 s3 = rownames(bray_df %>% filter(Axis.2 == min(Axis.2)))
 s4 = rownames(bray_df %>% filter(Axis.2 == max(Axis.2)))
 s1_bar = plot_tax_bar(filter(ps_df, Study_ID == s1), 'Family',
-                       colours = fam_cols, sample = 'Study_ID') +
+                       colours = fam_dark, sample = 'Study_ID') +
     theme_void() +
     theme(legend.position = 'none')
 
 s2_bar = plot_tax_bar(filter(ps_df, Study_ID == s2), 'Family',
-                       colours = fam_cols, sample = 'Study_ID') +
+                       colours = fam_dark, sample = 'Study_ID') +
     theme_void() +
     theme(legend.position = 'none')
 s3_bar = plot_tax_bar(filter(ps_df, Study_ID == s3), 'Family',
-                       colours = fam_cols, sample = 'Study_ID') +
+                       colours = fam_dark, sample = 'Study_ID') +
     theme_void() +
     theme(legend.position = 'none')
 s4_bar = plot_tax_bar(filter(ps_df, Study_ID == s4), 'Family',
-                       colours = fam_cols, sample = 'Study_ID') +
+                       colours = fam_dark, sample = 'Study_ID') +
     theme_void() +
     theme(legend.position = 'none')
 
