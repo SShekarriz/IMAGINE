@@ -69,6 +69,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \usepackage{geometry}
+\usepackage{eso-pic}
 \usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -76,12 +77,23 @@
 \usepackage[fontsize=12]{scrextend}
 %\setlength\voffset{-29pt}
 %\geometry{hmargin=0pt}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{img/logo_for_background.png}%
+\vfill
+}}}
 \setlength{\columnsep}{1cm}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \setlength\headheight{84.0pt}
 \addtolength{\textheight}{-84.0pt}
 \chead{\includegraphics[width=\textwidth]{img/logo_banner_cropped.png}}
+\pagenumbering{gobble}
+\fancyhead[R]{}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -97,23 +109,48 @@
 
 \begin{document}
 
+%\AddToShipoutPicture*{\BackgroundPic}
+
 \twocolumn[\begin{@twocolumnfalse}
 
-
-
-\section{Introduction}
-
-INTRODUCTION TO MICROBIOME AND TO THE IMAGINE STUDY
-
 \vspace{1cm}
+\begin{centering}
+{\fontsize{40pt}{56pt}\selectfont \textbf{Welcome to Your Microbiome!}\par}
+
+\vspace{0.5cm}
+
+
+\begin{center}\includegraphics{Example_files/figure-latex/WdCldLrgDisplay-1} \end{center}
+\end{centering}
+
+\end{@twocolumnfalse}]
+\twocolumn[\begin{@twocolumnfalse}
+\newpage
+
+\clearpage
+\pagenumbering{arabic}
+
+\raisebox{0.1\textheight}{
+\begin{minipage}{\textwidth}
+\section{Welcome}
+
+Welcome to your IMAGINE microbiome report! In this report, you will find a 
+description of your fecal microbiome, you will see where your sample is located
+compared to other samples in the study, and at the end you'll find a more 
+detailed explanation of what the microbiome is and what it does.
+
+\vspace{0.5cm}
+\end{minipage}
+}
 
 \end{@twocolumnfalse}]
 
-\raisebox{-0.3\textheight}{
+\raisebox{-0.2\textheight}{
 \begin{minipage}{0.45\textwidth}
 
 \section{Your Sample}
 
+\begin{small}
 This bar chart shows your personal fecal bacterial community. 
 Bacteria are grouped into \textbf{families} based on how closely related
 they are.
@@ -124,22 +161,35 @@ bacteria grouped together as "Other". Next to it is a chart showing
 the average community of all the people who participated in the study,
 and across the bottom are four anonymous individuals chosen to show
 the range of variation in this study. As you can see, it's quite wide!
-
-
-
-
-
+\end{small}
 
 \end{minipage}
 }
 
 \newpage
 
-\includegraphics{Template_files/figure-latex/BarPlotDisplay-1.pdf}
+\raisebox{-0.1\textheight}{
+\begin{minipage}{0.45\textwidth}
+
+\includegraphics{Example_files/figure-latex/BarPlotDisplay-1.pdf}
+
+\end{minipage}
+}
+
+\twocolumn[\begin{@twocolumnfalse}
+
+\begin{minipage}{\textwidth}
+
+
+\begin{center}\includegraphics{Example_files/figure-latex/unnamed-chunk-1-1} \end{center}
+
+\end{minipage}
+
+\end{@twocolumnfalse}]
 
 \newpage
 
-\begin{center}\includegraphics{Template_files/figure-latex/unnamed-chunk-1-1} \end{center}
+\begin{center}\includegraphics{Example_files/figure-latex/WdCldSmlDisplay-1} \end{center}
 
 \section{You Are Here $\boldsymbol{\rightarrow}$}
 
@@ -176,7 +226,7 @@ which family that genus comes from.
 \begin{minipage}{0.45\textwidth}
 
 
-\begin{center}\includegraphics{Template_files/figure-latex/unnamed-chunk-2-1} \end{center}
+\begin{center}\includegraphics{Example_files/figure-latex/BrayPlotDisplay-1} \end{center}
 
 \end{minipage}
 }

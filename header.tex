@@ -16,6 +16,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \usepackage{geometry}
+\usepackage{eso-pic}
 \usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -23,9 +24,20 @@
 \usepackage[fontsize=12]{scrextend}
 %\setlength\voffset{-29pt}
 %\geometry{hmargin=0pt}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{img/logo_for_background.png}%
+\vfill
+}}}
 \setlength{\columnsep}{1cm}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \setlength\headheight{84.0pt}
 \addtolength{\textheight}{-84.0pt}
 \chead{\includegraphics[width=\textwidth]{img/logo_banner_cropped.png}}
+\pagenumbering{gobble}
+\fancyhead[R]{}
