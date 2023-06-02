@@ -1,32 +1,105 @@
----
-output: 
-    pdf_document:
-        includes:
-            in_header: Template_header.tex
-        pandoc_args: [
-            "-V", "classoption=twocolumn"
-        ]
-        keep_tex: true
-date: "2023-05-26"
----
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  twocolumn]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+%\usepackage{background}
+
+%\backgroundsetup{
+%scale=1,
+%color=black,
+%opacity=0.2,
+%angle=0,
+%pages=all,
+%contents={%
+%	\includegraphics[width=\paperwidth,height=\paperheight]{img/logo_transparent.png}
+%	}
+%}
+
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{geometry}
+\usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
+%% only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+\usepackage[fontsize=12]{scrextend}
+%\setlength\voffset{-29pt}
+%\geometry{hmargin=0pt}
+\setlength{\columnsep}{1cm}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength\headheight{84.0pt}
+\addtolength{\textheight}{-84.0pt}
+\chead{\includegraphics[width=\textwidth]{img/logo_banner_cropped.png}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}2023-05-26}
+
+\begin{document}
 
 \twocolumn[\begin{@twocolumnfalse}
 
-```{r setup, include=FALSE, message=FALSE, warning=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-library(tidyverse)
-library(phyloseq)
-library(AfterSl1p)
-library(ggwordcloud)
-library(cowplot)
-library(ggpubr)
-load('data/all_processed.RData')
 
-# set the sample
-samp = 'IMG112'
-my_df = filter(ps_df, Study_ID == samp)
-img = png::readPNG('img/gut_for_word_cloud.png')
-```
 
 \section{Introduction}
 
@@ -52,71 +125,21 @@ the average community of all the people who participated in the study,
 and across the bottom are four anonymous individuals chosen to show
 the range of variation in this study. As you can see, it's quite wide!
 
-```{r PlotSetup}
-wcdf = (my_df
-        %>% group_by(Family, Genus)
-        %>% summarize(Abundance = 100*sum(Abundance))
-        %>% filter(Genus != 'Other', 
-                   !grepl('.*_.*',as.character(Genus)))
-        %>% arrange(desc(Abundance)))
-
-```
 
 
-```{r PlotGen}
-wcplt = ggplot(wcdf, aes(label = Genus, size = Abundance, 
-                         colour = Family)) +
-    background_image(img) +
-    geom_text_wordcloud() +
-    scale_colour_manual(values = fam_dark) +
-    scale_size_area(max_size = 10) +
-    theme_void() 
 
-my_bar = plot_tax_bar(my_df, 'Family', fam_dark, 'Study_ID') +
-                    
-    theme(axis.title.y = element_blank(),
-          axis.ticks.x = element_blank()) +
-    scale_x_discrete(labels = 'Your sample')
 
-r2 = plot_grid(NULL,s1_bar, s2_bar, s3_bar, s4_bar, nrow = 1,
-               rel_widths = c(2.1,5,5,5,5))
-r1 = plot_grid(my_bar + theme(legend.position = 'none',
-                            axis.text = element_text(size = 10)) +
-                   scale_x_discrete(position = 'top',
-                                    labels = 'Your sample'), 
-               mean_bar + theme(axis.title = element_blank(),
-                                axis.text = element_text(size = 10),
-                                axis.text.y = element_blank(),
-                                axis.ticks = element_blank()) +
-                   scale_x_discrete(position = 'top',
-                                    labels = 'Everyone'),
-               rel_widths = c(4,5))
-leg = get_legend(my_bar + 
-                     theme(legend.text = element_text(size = 8),
-                           legend.title = element_text(size = 10)) +
-                     guides(colour = guide_legend(reverse = TRUE, ncol = 2),
-                            fill = guide_legend(reverse = TRUE, ncol = 2)))
-c1 = plot_grid(r1, r2, ncol = 1, rel_heights = c(2,1))
-bar_plts = plot_grid(c1, leg, ncol = 1, rel_heights = c(4,3))
-
-```
 
 \end{minipage}
 }
 
 \newpage
 
-```{r BarPlotDisplay, fig.width=5, fig.height=10}
-bar_plts
-```
-
+\includegraphics{Template_files/figure-latex/BarPlotDisplay-1.pdf}
 
 \newpage
 
-```{r, fig.width=4, fig.height=5, fig.align='center'}
-wcplt
-```
-
+\begin{center}\includegraphics{Template_files/figure-latex/unnamed-chunk-1-1} \end{center}
 
 \section{You Are Here $\boldsymbol{\rightarrow}$}
 
@@ -152,15 +175,8 @@ which family that genus comes from.
 \raisebox{-0.4\textheight}{
 \begin{minipage}{0.45\textwidth}
 
-```{r, fig.width=3, fig.height=3, fig.align='center'}
-my_bray_df = filter(bray_df, Study_ID == samp)
-my_bray_plt = bray_plt +
-    geom_point(data = my_bray_df, colour = '#4b9b79', alpha = 1,
-               size = 2) +
-    geom_point(data = my_bray_df, colour = '#4b9b79', alpha = 0.5,
-               size = 4)
-my_bray_plt
-```
+
+\begin{center}\includegraphics{Template_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \end{minipage}
 }
@@ -223,3 +239,5 @@ bacteria are involved in the breakdown of complex carbohydrates and the
 production of SCFAs such as butyrate, which have been shown to improve gut 
 health and protect against inflammation.
 \end{small}
+
+\end{document}
