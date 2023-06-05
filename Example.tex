@@ -70,6 +70,7 @@
 \pagestyle{fancy}
 \usepackage{geometry}
 \usepackage{eso-pic}
+\usepackage{cuted}
 \usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -94,6 +95,25 @@ keepaspectratio]{img/logo_for_background.png}%
 \chead{\includegraphics[width=\textwidth]{img/logo_banner_cropped.png}}
 \pagenumbering{gobble}
 \fancyhead[R]{}
+
+% columns.tex
+\newenvironment{cols}[1][]{}{}
+
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+\end{minipage}
+\ifhmode\unskip\fi
+\aftergroup\usignorespacesandallpars}
+
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+
+\makeatletter
+\def\ignorespacesandallpars{%
+	\@ifnextchar\par
+		{\expandafter\ingorespacesandallpars\@gobble}%
+		{}%
+}
+\makeatother
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -122,16 +142,12 @@ keepaspectratio]{img/logo_for_background.png}%
 
 \begin{center}\includegraphics{Example_files/figure-latex/WdCldLrgDisplay-1} \end{center}
 \end{centering}
-
 \end{@twocolumnfalse}]
-\twocolumn[\begin{@twocolumnfalse}
-\newpage
 
-\clearpage
+\twocolumn[\begin{@twocolumnfalse}
+
 \pagenumbering{arabic}
 
-\raisebox{0.1\textheight}{
-\begin{minipage}{\textwidth}
 \section{Welcome}
 
 Welcome to your IMAGINE microbiome report! In this report, you will find a 
@@ -139,9 +155,7 @@ description of your fecal microbiome, you will see where your sample is located
 compared to other samples in the study, and at the end you'll find a more 
 detailed explanation of what the microbiome is and what it does.
 
-\vspace{0.5cm}
-\end{minipage}
-}
+\vspace{1.5cm}
 
 \end{@twocolumnfalse}]
 
@@ -176,16 +190,16 @@ the range of variation in this study. As you can see, it's quite wide!
 \end{minipage}
 }
 
-\twocolumn[\begin{@twocolumnfalse}
-
+\begin{strip}
+\raisebox{-0.3\textheight}{
 \begin{minipage}{\textwidth}
-
 
 \begin{center}\includegraphics{Example_files/figure-latex/unnamed-chunk-1-1} \end{center}
 
 \end{minipage}
-
-\end{@twocolumnfalse}]
+}
+\end{strip}
+\vspace{10cm}
 
 \newpage
 

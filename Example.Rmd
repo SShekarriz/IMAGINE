@@ -118,16 +118,12 @@ my_bray_plt = bray_plt +
 wcplt_cov
 ```
 \end{centering}
-
 \end{@twocolumnfalse}]
-\twocolumn[\begin{@twocolumnfalse}
-\newpage
 
-\clearpage
+\twocolumn[\begin{@twocolumnfalse}
+
 \pagenumbering{arabic}
 
-\raisebox{0.1\textheight}{
-\begin{minipage}{\textwidth}
 \section{Welcome}
 
 Welcome to your IMAGINE microbiome report! In this report, you will find a 
@@ -135,9 +131,7 @@ description of your fecal microbiome, you will see where your sample is located
 compared to other samples in the study, and at the end you'll find a more 
 detailed explanation of what the microbiome is and what it does.
 
-\vspace{0.5cm}
-\end{minipage}
-}
+\vspace{1.5cm}
 
 \end{@twocolumnfalse}]
 
@@ -177,20 +171,20 @@ c1
 \end{minipage}
 }
 
-\twocolumn[\begin{@twocolumnfalse}
-
-```
-
+\begin{strip}
+\raisebox{-0.3\textheight}{
 \begin{minipage}{\textwidth}
+```
 
 ```{r, fig.height=2, fig.width=6, fig.align='center'}
 plot_grid(legnd)
 ```
 
-\end{minipage}
-
 ```{=latex}
-\end{@twocolumnfalse}]
+\end{minipage}
+}
+\end{strip}
+\vspace{10cm}
 
 \newpage
 ```
@@ -234,7 +228,7 @@ which family that genus comes from.
 \raisebox{-0.4\textheight}{
 \begin{minipage}{0.45\textwidth}
 
-```{r BrayPlotDisplay, fig.wdith=3, fig.height=3, fig.align='center'}
+```{r BrayPlotDisplay, fig.wdith=3, fig.height=6, fig.align='center'}
 my_bray_plt
 ```
 

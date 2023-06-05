@@ -17,6 +17,7 @@
 \pagestyle{fancy}
 \usepackage{geometry}
 \usepackage{eso-pic}
+\usepackage{cuted}
 \usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -41,3 +42,22 @@ keepaspectratio]{img/logo_for_background.png}%
 \chead{\includegraphics[width=\textwidth]{img/logo_banner_cropped.png}}
 \pagenumbering{gobble}
 \fancyhead[R]{}
+
+% columns.tex
+\newenvironment{cols}[1][]{}{}
+
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+\end{minipage}
+\ifhmode\unskip\fi
+\aftergroup\usignorespacesandallpars}
+
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+
+\makeatletter
+\def\ignorespacesandallpars{%
+	\@ifnextchar\par
+		{\expandafter\ingorespacesandallpars\@gobble}%
+		{}%
+}
+\makeatother
