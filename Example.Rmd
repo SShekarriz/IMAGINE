@@ -28,82 +28,10 @@ gut_img_sml = png::readPNG('img/gut_for_word_cloud.png')
 gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 ```
 
-```{r PlotGen}
-# Set up the data frame for the word cloud plot
-wcdf = (my_df
-        %>% group_by(Family, Genus)
-        %>% summarize(Abundance = 100*sum(Abundance))
-        %>% filter(Genus != 'Other', 
-                   !grepl('.*_.*',as.character(Genus)))
-        %>% arrange(desc(Abundance)))
-
-# Generate the word cloud plot. This is the full word cloud figure.
-wcplt = ggplot(wcdf, aes(label = Genus, size = Abundance, 
-                         colour = Family)) +
-    background_image(gut_img_sml) +
-    geom_text_wordcloud() +
-    scale_colour_manual(values = fam_dark) +
-    scale_size_area(max_size = 10) +
-    theme_void()
-
-# Generate a second word cloud plot for the cover page
-wcplt_cov = ggplot(wcdf, aes(label = Genus, size = Abundance, 
-                             colour = Family)) +
-    background_image(gut_img_sml) +
-    geom_text_wordcloud() +
-    scale_colour_manual(values = fam_dark) +
-    scale_size_area(max_size = 12) +
-    theme_void()
-
-# Generate the sample bar plot
-my_bar = plot_tax_bar(my_df, 'Family', fam_dark, 'Study_ID') +
-                    
-    theme(axis.title.y = element_blank(),
-          axis.ticks.x = element_blank()) +
-    scale_x_discrete(labels = 'Your sample')
-
-# The second row of the barplot figure has the four extreme bars plus some padding
-r2 = plot_grid(NULL,s1_bar, s2_bar, s3_bar, s4_bar, nrow = 1,
-               rel_widths = c(2.1,5,5,5,5))
-
-# The first row of the barplot figure has the sample plot and the mean plot
-r1 = plot_grid(my_bar + theme(legend.position = 'none',
-                            axis.text = element_text(size = 10)) +
-                   scale_x_discrete(position = 'top',
-                                    labels = 'Your sample'), 
-               mean_bar + theme(axis.title = element_blank(),
-                                axis.text = element_text(size = 10),
-                                axis.text.y = element_blank(),
-                                axis.ticks = element_blank()) +
-                   scale_x_discrete(position = 'top',
-                                    labels = 'Everyone'),
-               rel_widths = c(4,5))
-
-# Generate the legend for the barplot figure
-legnd = get_legend(my_bar + 
-                     theme(legend.text = element_text(size = 8),
-                           legend.title = element_text(size = 10)) +
-                     guides(colour = guide_legend(reverse = TRUE, ncol = 3),
-                            fill = guide_legend(reverse = TRUE, ncol = 3)))
-
-# Lay out the barplot figure without the legend
-c1 = plot_grid(r1, r2, ncol = 1, rel_heights = c(2,1))
-
-# Lay out the barplot figure with the legend. This is the full bar plot figure.
-bar_plts = plot_grid(c1, legnd, ncol = 1, rel_heights = c(4,3))
-
+```{r, child = 'ChildDocs/WordCloudPlt.Rmd'}
 ```
 
-```{r BrayPlotGen}
-# Get a data frame of just this sample's point
-my_bray_df = filter(bray_df, Study_ID == samp)
-
-# Add it to the imported bray plot. This is the full PCoA figure
-my_bray_plt = bray_plt +
-    geom_point(data = my_bray_df, colour = '#4b9b79', alpha = 1,
-               size = 2) +
-    geom_point(data = my_bray_df, colour = '#4b9b79', alpha = 0.5,
-               size = 4)
+```{r, child = 'BrayPlt.Rmd'}
 ```
 
 \twocolumn[\begin{@twocolumnfalse}
@@ -124,7 +52,7 @@ wcplt_cov
 
 \pagenumbering{arabic}
 
-```{r, child = 'Welcome.Rmd'}
+```{r, child = 'ChildDocs/Welcome.Rmd'}
 ```
 
 \vspace{1.5cm}
