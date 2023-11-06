@@ -46,9 +46,9 @@ ps_filt = prune_taxa(keep, ps)
 
 ps_df = make_phy_df(ps_rel_filt, rank = 'Genus', cutoff = 0.001,
                     indic = FALSE, prop = FALSE)
-tc_dark = c('#326751','#e25f1d','#5857a8','#ffff33','#3333ff','#f83620',
+tc_dark = c('#326751','#e25f1d','#5857a8','#0000cc','#3333ff','#f83620',
             '#418abe','#fb8804','#86bc29','#f556a8','#a757a8','#69c454',
-            '#ffe41a','#3d93c2','#f73e3b','#fb9004','#b8475a','#4d4dff',
+            '#b30000','#3d93c2','#f73e3b','#fb9004','#b8475a','#4d4dff',
             '#9da659','#20e3f8','#be7541','#418abe','#6a2ed1','#26f289',
             '#468745','#a741be','#1a34ff','#c26c3d','#09d9dc','#0364e2')
 n = ceiling(n_distinct(ps_df$Family)/length(tax_colours))

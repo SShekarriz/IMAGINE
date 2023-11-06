@@ -75,6 +75,8 @@
 \usepackage{eso-pic}
 \usepackage{cuted}
 \usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{wrapfig}
 \usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -136,26 +138,24 @@ keepaspectratio]{img/logo_for_background.png}%
 
 %\AddToShipoutPicture*{\BackgroundPic}
 
-\vspace{1cm}
-\vspace*{\fill}
-\begin{centering}
-{\fontsize{40pt}{56pt}\selectfont \textbf{Welcome to Your Microbiome!}\par}
+\vspace{2cm}
 
-\vspace{0.5cm}
+\section{Welcome to Your Microbiome!}
+
+\begin{centering}
 
 
 \begin{center}\includegraphics{Example_files/figure-latex/WdCldLrgDisplay-1} \end{center}
 \end{centering}
-\vspace*{\fill}
-
-\pagenumbering{arabic}
-
-\section{Welcome}
 
 Welcome to your IMAGINE microbiome report! In this report, you will find
 an introduction to the human fecal microbiome, a description of your
 personal microbiome, and some more detailed information about the
-specific bacteria that were common in your sample.
+specific bacteria that were abundant in your sample.
+
+\pagenumbering{arabic}
+
+\newpage
 
 \section{Introduction}
 
@@ -174,11 +174,18 @@ We are still very much at the beginning of understanding all the things
 the gut microbiome does, how our actions and environment affect it, and
 how we can use it to keep people healthier and living longer. The MAGIC
 study (a sub-study of the IMAGINE study that you are participating in)
-is an ambitious project to improve our understanding of how three
-important variables (genes, diet, and mental health) impact the gut
-microbiome in people with inflammatory bowel disease (IBD) and irritable
-bowel syndrome (IBS), and in turn how all four factors together impact
-the disease course.
+is an ambitious project to
+
+\begin{wrapfigure}{r}{0.18\textwidth}
+\begin{center}
+\includegraphics[width=0.18\textwidth]{img/Biological_classification_L_Pengo_vflip.png}
+\end{center}
+\end{wrapfigure}
+
+improve our understanding of how three important variables (genes, diet,
+and mental health) impact the gut microbiome in people with inflammatory
+bowel disease (IBD) and irritable bowel syndrome (IBS), and in turn how
+all four factors together impact the disease course.
 
 \subsection{Studying the microbiome}
 
@@ -186,12 +193,10 @@ A key component of the MAGIC study is generating microbiome profiles for
 each participant in the study. So, how do we do that?
 
 Bacteria, just like plants and animals, can be grouped together into
-closely related groups called ``species''. Those species can then be
-grouped together into bigger groups called ``genera'' (singular: genus),
-and genera can be grouped together into families, and so on up the tree
-of life.
-
-TAXONOMIC HIERARCHY IMAGE
+closely related groups called \textbf{species}. Those species can then
+be grouped together into bigger groups called \textbf{genera} (singular:
+genus), and genera can be grouped together into \textbf{families}, and
+so on up the tree of life.
 
 Each bacterial species has a unique genetic ``barcode'' that can be used
 to identify it. To determine the composition of each sample's
@@ -254,14 +259,14 @@ the range of variation in this study. As you can see, it's quite wide!
 \newpage
 
 \begin{multicols}{2}
-[\textbf{More Detail}]
 \raggedcolumns
 
 \begin{center}\includegraphics{Example_files/figure-latex/WdCldSmlDisplay-1} \end{center}
 
 \columnbreak
 
-\vspace*{\fill}
+\vspace*{1cm}
+\section{$\boldsymbol{\leftarrow}$ More Detail}
 \begin{small}
 This word cloud shows your personal bacterial community at a finer 
 level of detail. Within each family, bacteria can be subdivided into 
@@ -274,11 +279,12 @@ which family that genus comes from.
 \end{multicols}
 
 \begin{multicols}{2}
-[\textbf{You Are Here}]
 \raggedcolumns
 
+\vspace*{\fill}
+\section{You Are Here $\boldsymbol{\rightarrow}$}
 \begin{small}
-There were over 1,000 people participating in this study! We have 
+There are over 1,000 people participating in this study so far! We have 
 graphed everyone together based on how similar or different their gut
 microbiomes were. In the next graph, points that are closer together
 are more similar to each other, and points that are farther apart are
@@ -288,9 +294,14 @@ gut microbiome is. As we've seen above, there is a wide range of
 normal variation in the human gut.
 \end{small}
 
+\vspace*{\fill}
 \columnbreak
 
+\vspace*{1cm}
+
 \begin{center}\includegraphics{Example_files/figure-latex/BrayPlotDisplay-1} \end{center}
+
+\vspace*{\fill}
 
 \end{multicols}
 
@@ -298,8 +309,8 @@ normal variation in the human gut.
 
 \section{Your Bacterial Families}
 
-Everyone's microbiome is slightly different. In your microbiome, the
-four most abundant bacterial families were \textit{Lachnospiraceae},
+Everyone's microbiome is different. In your microbiome, the four most
+abundant bacterial families were \textit{Lachnospiraceae},
 \textit{Ruminococcaceae}, \textit{Bacteroidaceae}, and
 \textit{Oscillospiraceae*}. Here is a little bit of information about
 what functions these four familes perform in the gut.

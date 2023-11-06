@@ -6,7 +6,9 @@ wcdf = (my_df
         %>% summarize(Abundance = 100*sum(Abundance))
         %>% filter(Genus != 'Other', 
                    !grepl('.*_.*',as.character(Genus)))
-        %>% arrange(desc(Abundance)))
+        %>% arrange(desc(Abundance))
+        %>% mutate(angle = 45*sample(-2:2, n(), replace = TRUE,
+                                     prob = c(1,1,4,1,1))))
 
 # Generate the word cloud plot. This is the full word cloud figure.
 wcplt = ggplot(wcdf, aes(label = Genus, size = Abundance, 
@@ -14,7 +16,7 @@ wcplt = ggplot(wcdf, aes(label = Genus, size = Abundance,
     background_image(gut_img_sml) +
     geom_text_wordcloud() +
     scale_colour_manual(values = fam_dark) +
-    scale_size_area(max_size = 10) +
+    scale_size_area(max_size = 12) +
     theme_void()
 
 # Generate a second word cloud plot for the cover page

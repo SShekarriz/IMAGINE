@@ -1,7 +1,14 @@
 
-\section{Welcome}
+\section{Welcome to Your Microbiome!}
+
+\begin{centering}
+
+```{r WdCldLrgDisplay, fig.width=5.2, fig.height=6, fig.align='center'}
+wcplt_cov
+```
+\end{centering}
 
 Welcome to your IMAGINE microbiome report! In this report, you will find an
 introduction to the human fecal microbiome, a description of your personal
 microbiome, and some more detailed information about the specific bacteria that
-were common in your sample.
+were abundant in your sample.

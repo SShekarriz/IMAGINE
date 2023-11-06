@@ -21,7 +21,7 @@ load('data/all_processed.RData')
 # set the sample
 samp = 'IMG112'
 my_df = filter(ps_df, Study_ID == samp)
-gut_img_sml = png::readPNG('img/gut_for_word_cloud15.5.png')
+gut_img_sml = png::readPNG('img/gut_for_word_cloud.png')
 gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 ```
 
@@ -31,24 +31,13 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 ```{r, child = 'ChildDocs/BrayPlt.Rmd'}
 ```
 
-\vspace{1cm}
-\vspace*{\fill}
-\begin{centering}
-{\fontsize{40pt}{56pt}\selectfont \textbf{Welcome to Your Microbiome!}\par}
-
-\vspace{0.5cm}
-
-```{r WdCldLrgDisplay, fig.width=5.2, fig.height=6, fig.align='center'}
-wcplt_cov
+\vspace{2cm}
+```{r, child = 'ChildDocs/Welcome.Rmd'}
 ```
-\end{centering}
-\vspace*{\fill}
-
 
 \pagenumbering{arabic}
 
-```{r, child = 'ChildDocs/Welcome.Rmd'}
-```
+\newpage
 
 ```{r, child = 'ChildDocs/Introduction.Rmd'}
 ```
@@ -92,7 +81,6 @@ plot_grid(legnd)
 
 ```{=latex}
 \begin{multicols}{2}
-[\textbf{More Detail}]
 \raggedcolumns
 ```
 
@@ -102,7 +90,8 @@ wcplt
 
 \columnbreak
 
-\vspace*{\fill}
+\vspace*{1cm}
+\section{$\boldsymbol{\leftarrow}$ More Detail}
 \begin{small}
 This word cloud shows your personal bacterial community at a finer 
 level of detail. Within each family, bacteria can be subdivided into 
@@ -119,13 +108,13 @@ which family that genus comes from.
 
 ```{=latex}
 \begin{multicols}{2}
-[\textbf{You Are Here}]
 \raggedcolumns
 ```
 
-
+\vspace*{\fill}
+\section{You Are Here $\boldsymbol{\rightarrow}$}
 \begin{small}
-There were over 1,000 people participating in this study! We have 
+There are over 1,000 people participating in this study so far! We have 
 graphed everyone together based on how similar or different their gut
 microbiomes were. In the next graph, points that are closer together
 are more similar to each other, and points that are farther apart are
@@ -135,13 +124,16 @@ gut microbiome is. As we've seen above, there is a wide range of
 normal variation in the human gut.
 \end{small}
 
+\vspace*{\fill}
 \columnbreak
 
 
+\vspace*{1cm}
 ```{r BrayPlotDisplay, fig.wdith=3, fig.height=6, fig.align='center'}
 my_bray_plt
 ```
 
+\vspace*{\fill}
 ```{=latex}
 \end{multicols}
 ```
@@ -150,7 +142,7 @@ my_bray_plt
 
 \section{Your Bacterial Families}
 
-Everyone's microbiome is slightly different. In your microbiome, the four most
+Everyone's microbiome is different. In your microbiome, the four most
 abundant bacterial families were \textit{Lachnospiraceae}, 
 \textit{Ruminococcaceae}, \textit{Bacteroidaceae}, and 
 \textit{Oscillospiraceae*}. Here is a little bit of information

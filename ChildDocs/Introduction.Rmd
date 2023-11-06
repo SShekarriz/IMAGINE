@@ -13,10 +13,16 @@ We are still very much at the beginning of understanding all the things the gut
 microbiome does, how our actions and environment affect it, and how we can use
 it to keep people healthier and living longer. The MAGIC study (a sub-study of
 the IMAGINE study that you are participating in) is an ambitious project to
+\begin{wrapfigure}{r}{0.18\textwidth}
+\begin{center}
+\includegraphics[width=0.18\textwidth]{img/Biological_classification_L_Pengo_vflip.png}
+\end{center}
+\end{wrapfigure}
 improve our understanding of how three important variables (genes, diet, and
 mental health) impact the gut microbiome in people with inflammatory bowel
 disease (IBD) and irritable bowel syndrome (IBS), and in turn how all four
 factors together impact the disease course.
+
 
 \subsection{Studying the microbiome}
 
@@ -24,20 +30,18 @@ A key component of the MAGIC study is generating microbiome profiles for each
 participant in the study. So, how do we do that?
 
 Bacteria, just like plants and animals, can be grouped together into closely
-related groups called "species". Those species can then be grouped together into
-bigger groups called "genera" (singular: genus), and genera can be grouped
-together into families, and so on up the tree of life. 
+related groups called **species**. Those species can then be grouped together
+into bigger groups called **genera** (singular: genus), and genera can be
+grouped together into **families**, and so on up the tree of life. 
 
-TAXONOMIC HIERARCHY IMAGE
-
-Each bacterial species
-has a unique genetic "barcode" that can be used to identify it. To determine the
-composition of each sample's microbiome, we extract the DNA from your stool
-sample and then isolate and sequence these bacterial DNA barcodes. We don't
-sequence any human DNA, just the bacterial barcodes. We generate 10,000 to
-50,000 barcode sequences per sample. Each sequence is then labeled with its
-taxonomic identity (which species, genus, family, etc. it belongs to) and the
-number of bacteria present in each species is counted.
+Each bacterial species has a unique genetic "barcode" that can be used to
+identify it. To determine the composition of each sample's microbiome, we
+extract the DNA from your stool sample and then isolate and sequence these
+bacterial DNA barcodes. We don't sequence any human DNA, just the bacterial
+barcodes. We generate 10,000 to 50,000 barcode sequences per sample. Each
+sequence is then labeled with its taxonomic identity (which species, genus,
+family, etc. it belongs to) and the number of bacteria present in each species
+is counted.
 
 You can think of the bacteria in your gut like a jar of jelly beans. The barcode
 tells us what colour each jelly bean is, and the number of times we see that
