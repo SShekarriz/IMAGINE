@@ -80,6 +80,7 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
 \usepackage[fontsize=12]{scrextend}
+\fancyhf{}
 %\setlength\voffset{-29pt}
 %\geometry{hmargin=0pt}
 \newcommand\BackgroundPic{%
@@ -136,6 +137,7 @@ keepaspectratio]{img/logo_for_background.png}%
 %\AddToShipoutPicture*{\BackgroundPic}
 
 \vspace{1cm}
+\vspace*{\fill}
 \begin{centering}
 {\fontsize{40pt}{56pt}\selectfont \textbf{Welcome to Your Microbiome!}\par}
 
@@ -144,6 +146,7 @@ keepaspectratio]{img/logo_for_background.png}%
 
 \begin{center}\includegraphics{Example_files/figure-latex/WdCldLrgDisplay-1} \end{center}
 \end{centering}
+\vspace*{\fill}
 
 \pagenumbering{arabic}
 
@@ -221,11 +224,12 @@ associations between our microbes and our health will lead to new
 treatments that target the microbiome directly: increasing ``good''
 bacteria and decreasing ``bad'' bacteria.
 
-\vspace{1.5cm}
+\newpage
+
+\vspace*{\fill}
 
 \begin{multicols}{2}
-
-\section{Your Sample}
+[\textbf{Your Sample}]
 
 \begin{small}
 This bar chart shows your personal fecal bacterial community. 
@@ -239,14 +243,39 @@ the average community of all the people who participated in the study,
 and across the bottom are four anonymous individuals chosen to show
 the range of variation in this study. As you can see, it's quite wide!
 \end{small}
+\columnbreak
 
 \includegraphics{Example_files/figure-latex/BarPlotDisplay-1.pdf}
 
+\end{multicols}
+
 \begin{center}\includegraphics{Example_files/figure-latex/unnamed-chunk-5-1} \end{center}
+\vspace*{\fill}
+\newpage
+
+\begin{multicols}{2}
+[\textbf{More Detail}]
+\raggedcolumns
 
 \begin{center}\includegraphics{Example_files/figure-latex/WdCldSmlDisplay-1} \end{center}
 
-\section{You Are Here $\boldsymbol{\rightarrow}$}
+\columnbreak
+
+\vspace*{\fill}
+\begin{small}
+This word cloud shows your personal bacterial community at a finer 
+level of detail. Within each family, bacteria can be subdivided into 
+several \textbf{genera} (singular, \textbf{genus}). The size of each word
+represents the relative abundance of that genus, and the colour shows
+which family that genus comes from.
+\end{small}
+\vspace*{\fill}
+
+\end{multicols}
+
+\begin{multicols}{2}
+[\textbf{You Are Here}]
+\raggedcolumns
 
 \begin{small}
 There were over 1,000 people participating in this study! We have 
@@ -259,17 +288,13 @@ gut microbiome is. As we've seen above, there is a wide range of
 normal variation in the human gut.
 \end{small}
 
-\section{$\boldsymbol{\leftarrow}$ More Detail}
-
-\begin{small}
-This word cloud shows your personal bacterial community at a finer 
-level of detail. Within each family, bacteria can be subdivided into 
-several \textbf{genera} (singular, \textbf{genus}). The size of each word
-represents the relative abundance of that genus, and the colour shows
-which family that genus comes from.
-\end{small}
+\columnbreak
 
 \begin{center}\includegraphics{Example_files/figure-latex/BrayPlotDisplay-1} \end{center}
+
+\end{multicols}
+
+\newpage
 
 \section{Your Bacterial Families}
 
@@ -278,8 +303,6 @@ four most abundant bacterial families were \textit{Lachnospiraceae},
 \textit{Ruminococcaceae}, \textit{Bacteroidaceae}, and
 \textit{Oscillospiraceae*}. Here is a little bit of information about
 what functions these four familes perform in the gut.
-
-\vspace{1cm}
 
 \subsection{Lachnospiraceae}
 
@@ -323,7 +346,5 @@ bacteria are involved in the breakdown of complex carbohydrates and the
 production of SCFAs such as butyrate, which have been shown to improve gut 
 health and protect against inflammation.
 \end{small}
-
-\end{multicols}
 
 \end{document}

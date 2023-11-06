@@ -21,7 +21,7 @@ load('data/all_processed.RData')
 # set the sample
 samp = 'IMG112'
 my_df = filter(ps_df, Study_ID == samp)
-gut_img_sml = png::readPNG('img/gut_for_word_cloud.png')
+gut_img_sml = png::readPNG('img/gut_for_word_cloud15.5.png')
 gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 ```
 
@@ -31,9 +31,8 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 ```{r, child = 'ChildDocs/BrayPlt.Rmd'}
 ```
 
-
-
 \vspace{1cm}
+\vspace*{\fill}
 \begin{centering}
 {\fontsize{40pt}{56pt}\selectfont \textbf{Welcome to Your Microbiome!}\par}
 
@@ -43,6 +42,7 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 wcplt_cov
 ```
 \end{centering}
+\vspace*{\fill}
 
 
 \pagenumbering{arabic}
@@ -53,13 +53,14 @@ wcplt_cov
 ```{r, child = 'ChildDocs/Introduction.Rmd'}
 ```
 
-\vspace{1.5cm}
+\newpage
+
+\vspace*{\fill}
 
 ```{=latex}
 \begin{multicols}{2}
+[\textbf{Your Sample}]
 ```
-
-\section{Your Sample}
 
 \begin{small}
 This bar chart shows your personal fecal bacterial community. 
@@ -73,22 +74,55 @@ the average community of all the people who participated in the study,
 and across the bottom are four anonymous individuals chosen to show
 the range of variation in this study. As you can see, it's quite wide!
 \end{small}
+\columnbreak
 
 
 ```{r BarPlotDisplay, fig.width=5, fig.height=5}
 c1
 ```
 
+```{=latex}
+\end{multicols}
+```
 ```{r, fig.height=2, fig.width=6, fig.align='center'}
 plot_grid(legnd)
+```
+\vspace*{\fill}
+\newpage
+
+```{=latex}
+\begin{multicols}{2}
+[\textbf{More Detail}]
+\raggedcolumns
 ```
 
 ```{r WdCldSmlDisplay, fig.width=4, fig.height=5, fig.align='center'}
 wcplt
 ```
 
+\columnbreak
 
-\section{You Are Here $\boldsymbol{\rightarrow}$}
+\vspace*{\fill}
+\begin{small}
+This word cloud shows your personal bacterial community at a finer 
+level of detail. Within each family, bacteria can be subdivided into 
+several \textbf{genera} (singular, \textbf{genus}). The size of each word
+represents the relative abundance of that genus, and the colour shows
+which family that genus comes from.
+\end{small}
+\vspace*{\fill}
+
+
+```{=latex}
+\end{multicols}
+```
+
+```{=latex}
+\begin{multicols}{2}
+[\textbf{You Are Here}]
+\raggedcolumns
+```
+
 
 \begin{small}
 There were over 1,000 people participating in this study! We have 
@@ -101,22 +135,18 @@ gut microbiome is. As we've seen above, there is a wide range of
 normal variation in the human gut.
 \end{small}
 
-\section{$\boldsymbol{\leftarrow}$ More Detail}
-
-\begin{small}
-This word cloud shows your personal bacterial community at a finer 
-level of detail. Within each family, bacteria can be subdivided into 
-several \textbf{genera} (singular, \textbf{genus}). The size of each word
-represents the relative abundance of that genus, and the colour shows
-which family that genus comes from.
-\end{small}
-
+\columnbreak
 
 
 ```{r BrayPlotDisplay, fig.wdith=3, fig.height=6, fig.align='center'}
 my_bray_plt
 ```
 
+```{=latex}
+\end{multicols}
+```
+
+\newpage
 
 \section{Your Bacterial Families}
 
@@ -125,8 +155,6 @@ abundant bacterial families were \textit{Lachnospiraceae},
 \textit{Ruminococcaceae}, \textit{Bacteroidaceae}, and 
 \textit{Oscillospiraceae*}. Here is a little bit of information
 about what functions these four familes perform in the gut.
-
-\vspace{1cm}
 
 
 \subsection{Lachnospiraceae}
@@ -172,6 +200,3 @@ production of SCFAs such as butyrate, which have been shown to improve gut
 health and protect against inflammation.
 \end{small}
 
-```{=latex}
-\end{multicols}
-```
