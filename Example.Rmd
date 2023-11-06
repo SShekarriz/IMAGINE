@@ -4,9 +4,6 @@ output:
         includes:
             in_header: header.tex
             before_body: body.tex
-        pandoc_args: [
-            "-V", "classoption=twocolumn"
-        ]
         keep_tex: true
 date: "2023-05-26"
 ---
@@ -31,10 +28,10 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 ```{r, child = 'ChildDocs/WordCloudPlt.Rmd'}
 ```
 
-```{r, child = 'BrayPlt.Rmd'}
+```{r, child = 'ChildDocs/BrayPlt.Rmd'}
 ```
 
-\twocolumn[\begin{@twocolumnfalse}
+
 
 \vspace{1cm}
 \begin{centering}
@@ -46,21 +43,21 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 wcplt_cov
 ```
 \end{centering}
-\end{@twocolumnfalse}]
 
-\twocolumn[\begin{@twocolumnfalse}
 
 \pagenumbering{arabic}
 
 ```{r, child = 'ChildDocs/Welcome.Rmd'}
 ```
 
+```{r, child = 'ChildDocs/Introduction.Rmd'}
+```
+
 \vspace{1.5cm}
 
-\end{@twocolumnfalse}]
-
-\raisebox{-0.2\textheight}{
-\begin{minipage}{0.45\textwidth}
+```{=latex}
+\begin{multicols}{2}
+```
 
 \section{Your Sample}
 
@@ -77,40 +74,13 @@ and across the bottom are four anonymous individuals chosen to show
 the range of variation in this study. As you can see, it's quite wide!
 \end{small}
 
-\end{minipage}
-}
-
-\newpage
-
-```{=latex}
-\raisebox{-0.1\textheight}{
-\begin{minipage}{0.45\textwidth}
-```
 
 ```{r BarPlotDisplay, fig.width=5, fig.height=5}
 c1
 ```
 
-```{=latex}
-\end{minipage}
-}
-
-\begin{strip}
-\raisebox{-0.3\textheight}{
-\begin{minipage}{\textwidth}
-```
-
 ```{r, fig.height=2, fig.width=6, fig.align='center'}
 plot_grid(legnd)
-```
-
-```{=latex}
-\end{minipage}
-}
-\end{strip}
-\vspace{10cm}
-
-\newpage
 ```
 
 ```{r WdCldSmlDisplay, fig.width=4, fig.height=5, fig.align='center'}
@@ -131,11 +101,6 @@ gut microbiome is. As we've seen above, there is a wide range of
 normal variation in the human gut.
 \end{small}
 
-\newpage
-
-\raisebox{-0.2\textheight}{
-\begin{minipage}{0.5\textwidth}
-
 \section{$\boldsymbol{\leftarrow}$ More Detail}
 
 \begin{small}
@@ -146,22 +111,12 @@ represents the relative abundance of that genus, and the colour shows
 which family that genus comes from.
 \end{small}
 
-\end{minipage}
-}
 
-\raisebox{-0.4\textheight}{
-\begin{minipage}{0.45\textwidth}
 
 ```{r BrayPlotDisplay, fig.wdith=3, fig.height=6, fig.align='center'}
 my_bray_plt
 ```
 
-\end{minipage}
-}
-
-\newpage
-
-\twocolumn[\begin{@twocolumnfalse}
 
 \section{Your Bacterial Families}
 
@@ -173,7 +128,6 @@ about what functions these four familes perform in the gut.
 
 \vspace{1cm}
 
-\end{@twocolumnfalse}]
 
 \subsection{Lachnospiraceae}
 
@@ -217,3 +171,7 @@ bacteria are involved in the breakdown of complex carbohydrates and the
 production of SCFAs such as butyrate, which have been shown to improve gut 
 health and protect against inflammation.
 \end{small}
+
+```{=latex}
+\end{multicols}
+```
