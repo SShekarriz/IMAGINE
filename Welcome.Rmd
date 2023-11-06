@@ -1,0 +1,7 @@
+
+\section{Welcome}
+
+Welcome to your IMAGINE microbiome report! In this report, you will find a 
+description of your fecal microbiome, you will see where your sample is located
+compared to other samples in the study, and at the end you'll find a more 
+detailed explanation of what the microbiome is and what it does.

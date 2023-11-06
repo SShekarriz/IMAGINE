@@ -8,3 +8,6 @@ IMAGINE.Rproj
 Notes_files/*
 Rplots.pdf
 *_files/*
+Feedback/*
+*.Rproj
+*.docx
