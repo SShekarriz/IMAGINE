@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="590" font-family="DejaVu Sans,sans-serif,Sans" font-size="200" viewBox="0 0 2300 5900">
+ <g fill-rule="evenodd" stroke="#000">
+  <g stroke-width="15">
+   <rect transform="scale(1 -1)" x="1007.9" y="-1189" width="1236.5" height="399.65" rx="79.19" fill="#77c3ff"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-1824" width="1236.5" height="399.65" rx="79.19" fill="#77fff9"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-2458.9" width="1236.5" height="399.65" rx="79.19" fill="#77ffb6"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-3093.8" width="1236.5" height="399.65" rx="79.19" fill="#7bff77"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-3728.8" width="1236.5" height="399.65" rx="79.19" fill="#beff77"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-4363.7" width="1236.5" height="399.65" rx="79.19" fill="#fffd77"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-4998.6" width="1236.5" height="399.65" rx="79.19" fill="#ffba77"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-5633.6" width="1236.5" height="399.65" rx="79.19" fill="#ebae85"/>
+   <rect transform="scale(1 -1)" x="1007.9" y="-554.1" width="1236.5" height="399.65" rx="79.19" fill="#777fff"/>
+  </g>
+  <path d="m573.92 59.9c2.36 148.2 495.45 238.94 513.86 590.23h-1027.7c-6.05-343.91 512.98-452.02 513.86-590.23z" fill="#5863ff" stroke-width="20"/>
+  <path d="m1087.8 650.2c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#959cff" stroke-width="20"/>
+  <g stroke-width="15">
+   <path d="m677.71 692.16c0 20.536-47.753 37.183-106.66 37.183s-106.66-16.647-106.66-37.183 47.753-37.183 106.66-37.183 106.66 16.647 106.66 37.183z" fill="#58b5ff"/>
+   <path d="m976.51 670.96c0 20.536-47.753 37.183-106.66 37.183s-106.66-16.647-106.66-37.183 47.753-37.183 106.66-37.183 106.66 16.647 106.66 37.183z" fill="#d3d3d3"/>
+   <path d="m402.61 671.36c0 20.536-47.753 37.183-106.66 37.183s-106.66-16.647-106.66-37.183 47.753-37.183 106.66-37.183 106.66 16.647 106.66 37.183z" fill="#a9a9a9"/>
+  </g>
+  <path d="m612.22 698c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" fill="#58b5ff" stroke-width="20"/>
+  <path d="m1087.8 1288.3c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#95d0ff" stroke-width="20"/>
+  <g stroke-width="15">
+   <path d="m658.14 1327.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z" fill="#58fff7"/>
+   <path d="m912.64 1317.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z" fill="#90ee90"/>
+   <path d="m501.64 1271.9c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z" fill="#add8e6"/>
+   <path d="m296.44 1303.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z" fill="#f0e68c"/>
+  </g>
+  <path d="m612.22 1326.6c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" fill="#58fff7" stroke-width="20"/>
+  <path d="m1087.8 1916.8c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#95fffa" stroke-width="20"/>
+ </g>
+ <g fill="#58ffa5" fill-rule="evenodd" stroke="#000">
+  <g stroke-width="15">
+   <path d="m658.14 1956.2c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m888.24 1982.7c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m305.34 1917.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m1010.2 1905.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m531.24 1893.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m803.54 1895.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m449.04 1992.7c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+  </g>
+  <path d="m612.22 1958.5c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" stroke-width="20"/>
+ </g>
+ <path d="m1087.8 2548.7c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#95ffc6" fill-rule="evenodd" stroke="#000" stroke-width="20"/>
+ <g fill="#5dff58" fill-rule="evenodd" stroke="#000">
+  <g stroke-width="15">
+   <path d="m658.14 2588.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m888.24 2614.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m305.34 2549.4c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m1010.2 2537.4c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m531.24 2525.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m803.54 2527c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m449.04 2624.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+  </g>
+  <path d="m612.22 2592c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" stroke-width="20"/>
+ </g>
+ <path d="m1087.8 3182.2c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#99ff95" fill-rule="evenodd" stroke="#000" stroke-width="20"/>
+ <g fill="#b0ff58" fill-rule="evenodd" stroke="#000">
+  <g stroke-width="15">
+   <path d="m658.14 3221.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m888.24 3248.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m305.34 3182.9c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m1010.2 3170.9c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m531.24 3159c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m803.54 3160.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m449.04 3258.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+  </g>
+  <path d="m612.22 3225.5c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" stroke-width="20"/>
+ </g>
+ <path d="m1087.8 3815.7c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#cdff95" fill-rule="evenodd" stroke="#000" stroke-width="20"/>
+ <g fill="#fffd58" fill-rule="evenodd" stroke="#000">
+  <g stroke-width="15">
+   <path d="m658.14 3855.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m888.24 3881.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m305.34 3816.4c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m1010.2 3804.4c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m531.24 3792.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m803.54 3794c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m449.04 3891.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+  </g>
+  <path d="m612.22 3859c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" stroke-width="20"/>
+ </g>
+ <path d="m1087.8 4449.2c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#fffe95" fill-rule="evenodd" stroke="#000" stroke-width="20"/>
+ <g fill="#ffaa58" fill-rule="evenodd" stroke="#000">
+  <g stroke-width="15">
+   <path d="m658.14 4488.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m888.24 4515.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m305.34 4449.9c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m1010.2 4437.9c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m531.24 4426c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m803.54 4427.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m449.04 4525.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+  </g>
+  <path d="m612.22 4492.5c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" stroke-width="20"/>
+ </g>
+ <path d="m1087.8 5082.7c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#ffca95" fill-rule="evenodd" stroke="#000" stroke-width="20"/>
+ <g fill="#e28d54" fill-rule="evenodd" stroke="#000">
+  <g stroke-width="15">
+   <path d="m658.14 5122.1c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m888.24 5148.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m305.34 5083.4c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m1010.2 5071.4c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m531.24 5059.5c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m803.54 5061c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+   <path d="m449.04 5158.6c0 15.647-37.747 28.331-84.31 28.331s-84.31-12.684-84.31-28.331 37.747-28.331 84.31-28.331 84.31 12.684 84.31 28.331z"/>
+  </g>
+  <path d="m612.22 5119.9c2.36 148.2 457.15 238.94 475.56 590.23h-1027.7c-6.05-343.91 474.68-452.02 475.56-590.23" stroke-width="20"/>
+ </g>
+ <path d="m1087.8 5710.1c0-77.164-254.25-79.214-537.9-79.214s-489.82 2.05-489.82 79.214 230.21 139.79 513.86 139.79 513.86-62.626 513.86-139.79z" fill="#ebae85" fill-rule="evenodd" stroke="#000" stroke-width="20"/>
+ <g font-size="200" font-weight="bold" text-anchor="middle">
+
+  <switch>
+   <text x="1620.15" y="406.03" systemLanguage="af" id="life-af"><tspan id="life-af">Lewe</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="ban" id="life-ban"><tspan id="life-ban">Urip</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="br" id="life-br"><tspan id="life-br">Buhez</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="bs" id="life-bs"><tspan id="life-bs">Život</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="cs" id="life-cs"><tspan id="life-cs">život</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="de" id="life-de"><tspan id="life-de">Lebewesen</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="en" id="life-en"><tspan id="life-en">Life</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="es" id="life-es"><tspan id="life-es">Vida</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="fr" id="life-fr"><tspan id="life-fr">Vie</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="gl" id="life-gl"><tspan id="life-gl">Vida</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="ku" id="life-ku"><tspan id="life-ku">Jiyan</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="la" id="life-la"><tspan id="life-la">Imperium</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="my" id="life-my"><tspan id="life-my">သက်ရှိ</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="si" id="life-si"><tspan id="life-si">ජීවය</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="sk" id="life-sk"><tspan id="life-sk">život</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="tl" id="life-tl"><tspan id="life-tl">Buhay</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="uz" id="life-uz"><tspan id="life-uz">Hayot</tspan></text>
+   <text x="1620.15" y="406.03" systemLanguage="xmf" id="life-xmf"><tspan id="life-xmf">თელარა</tspan></text>
+   <text x="1620.15" y="406.03" id="life"><tspan id="life">Life</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1625.63" y="1039.75" systemLanguage="af" id="domain-af"><tspan id="domain-af">Domein</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="ban" id="domain-ban"><tspan id="domain-ban">Domain</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="br" id="domain-br"><tspan id="domain-br">Riezad</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="bs" id="domain-bs"><tspan id="domain-bs">Domen</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="cs" id="domain-cs"><tspan id="domain-cs">doména</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="de" id="domain-de"><tspan id="domain-de">Domäne</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="en" id="domain-en"><tspan id="domain-en">Domain</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="es" id="domain-es"><tspan id="domain-es">Dominio</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="fr" id="domain-fr"><tspan id="domain-fr">Domaine</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="gl" id="domain-gl"><tspan id="domain-gl">Dominio</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="ku" id="domain-ku"><tspan id="domain-ku">Sercîhan</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="la" id="domain-la"><tspan id="domain-la">Regio</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="my" id="domain-my"><tspan id="domain-my">နယ်ပယ်</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="si" id="domain-si"><tspan id="domain-si">වසම</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="sk" id="domain-sk"><tspan id="domain-sk">doména</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="tl" id="domain-tl"><tspan id="domain-tl">Dominyo</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="uz" id="domain-uz"><tspan id="domain-uz">Domen</tspan></text>
+   <text x="1625.63" y="1039.75" systemLanguage="xmf" id="domain-xmf"><tspan id="domain-xmf">დომენი</tspan></text>
+   <text x="1625.63" y="1039.75" id="domain"><tspan id="domain">Domain</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1624.92" y="1674.68" systemLanguage="af" id="kingdom-af"><tspan id="kingdom-af">Koninkryk</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="ban" id="kingdom-ban"><tspan id="kingdom-ban">Kerajaan</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="br" id="kingdom-br"><tspan id="kingdom-br">Renad</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="bs" id="kingdom-bs"><tspan id="kingdom-bs">Carstvo</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="cs" id="kingdom-cs"><tspan id="kingdom-cs">říše</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="de" id="kingdom-de"><tspan id="kingdom-de">Reich</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="en" id="kingdom-en"><tspan id="kingdom-en">Kingdom</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="es" id="kingdom-es"><tspan id="kingdom-es">Reino</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="fr" id="kingdom-fr"><tspan id="kingdom-fr">Règne</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="gl" id="kingdom-gl"><tspan id="kingdom-gl">Reino</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="ku" id="kingdom-ku"><tspan id="kingdom-ku">Cîhan</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="la" id="kingdom-la"><tspan id="kingdom-la">Regnum</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="my" id="kingdom-my"><tspan id="kingdom-my">လောက</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="si" id="kingdom-si"><tspan id="kingdom-si">රාජධානිය</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="sk" id="kingdom-sk"><tspan id="kingdom-sk">ríša</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="tl" id="kingdom-tl"><tspan id="kingdom-tl">Kaharian</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="uz" id="kingdom-uz"><tspan id="kingdom-uz">Olam</tspan></text>
+   <text x="1624.92" y="1674.68" systemLanguage="xmf" id="kingdom-xmf"><tspan id="kingdom-xmf">ომაფე</tspan></text>
+   <text x="1624.92" y="1674.68" id="kingdom"><tspan id="kingdom">Kingdom</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1625.16" y="2309.61" systemLanguage="af" id="phylum-af"><tspan id="phylum-af">Filum</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="ban" id="phylum-ban"><tspan id="phylum-ban">Pilum</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="br" id="phylum-br"><tspan id="phylum-br">Skourrad</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="bs" id="phylum-bs"><tspan id="phylum-bs">Koljeno</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="cs" id="phylum-cs"><tspan id="phylum-cs">kmen</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="de" id="phylum-de"><tspan id="phylum-de">Stamm</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="en" id="phylum-en"><tspan id="phylum-en">Phylum</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="es" id="phylum-es"><tspan id="phylum-es">Filo</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="fr" id="phylum-fr"><tspan id="phylum-fr">Division</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="gl" id="phylum-gl"><tspan id="phylum-gl">Filo</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="ku" id="phylum-ku"><tspan id="phylum-ku">Filûm</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="la" id="phylum-la"><tspan id="phylum-la">Phylum</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="my" id="phylum-my"><tspan id="phylum-my">မျိုးပေါင်းစု</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="si" id="phylum-si"><tspan id="phylum-si">වංශය</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="sk" id="phylum-sk"><tspan id="phylum-sk">kmeň</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="tl" id="phylum-tl"><tspan id="phylum-tl">Phylum</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="uz" id="phylum-uz"><tspan id="phylum-uz">Tip</tspan></text>
+   <text x="1625.16" y="2309.61" systemLanguage="xmf" id="phylum-xmf"><tspan id="phylum-xmf">ტიპი</tspan></text>
+   <text x="1625.16" y="2309.61" id="phylum"><tspan id="phylum">Phylum</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1626.33" y="2945.77" systemLanguage="af" id="class-af"><tspan id="class-af">Klas</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="ban" id="class-ban"><tspan id="class-ban">Kelas</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="br" id="class-br"><tspan id="class-br">Kevrennad</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="bs" id="class-bs"><tspan id="class-bs">Klasa</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="cs" id="class-cs"><tspan id="class-cs">třída</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="bs" id="class-bs"><tspan id="class-bs">Klasse</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="en" id="class-en"><tspan id="class-en">Class</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="es" id="class-es"><tspan id="class-es">Clase</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="fr" id="class-fr"><tspan id="class-fr">Classe</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="gl" id="class-gl"><tspan id="class-gl">Clase</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="ku" id="class-ku"><tspan id="class-ku">Çîn</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="la" id="class-la"><tspan id="class-la">Classis</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="my" id="class-my"><tspan id="class-my">မျိုးပေါင်း</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="si" id="class-si"><tspan id="class-si">වර්ගය</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="sk" id="class-sk"><tspan id="class-sk">trieda</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="tl" id="class-tl"><tspan id="class-tl">Klase</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="uz" id="class-uz"><tspan id="class-uz">Sinf</tspan></text>
+   <text x="1626.33" y="2945.77" systemLanguage="xmf" id="class-xmf"><tspan id="class-xmf">კლასი</tspan></text>
+   <text x="1626.33" y="2945.77" id="class"><tspan id="class">Class</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1619.36" y="3580.7" systemLanguage="af" id="order-af"><tspan id="order-af">Orde</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="ban" id="order-ban"><tspan id="order-ban">Ordo</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="br" id="order-br"><tspan id="order-br">Urzhiad</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="bs" id="order-bs"><tspan id="order-bs">Red</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="cs" id="order-cs"><tspan id="order-cs">řád</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="de" id="order-de"><tspan id="order-de">Familie</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="en" id="order-en"><tspan id="order-en">Order</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="es" id="order-es"><tspan id="order-es">Orden</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="fr" id="order-fr"><tspan id="order-fr">Ordre</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="gl" id="order-gl"><tspan id="order-gl">Orde</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="ku" id="order-ku"><tspan id="order-ku">Kom</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="la" id="order-la"><tspan id="order-la">Ordo</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="my" id="order-my"><tspan id="order-my">မျိုးစဉ်</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="si" id="order-si"><tspan id="order-si">ගෝත්‍රය</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="sk" id="order-sk"><tspan id="order-sk">rad</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="tl" id="order-tl"><tspan id="order-tl">Orden</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="uz" id="order-uz"><tspan id="order-uz">Otryad</tspan></text>
+   <text x="1619.36" y="3580.7" systemLanguage="xmf" id="order-xmf"><tspan id="order-xmf">რანწკი</tspan></text>
+   <text x="1619.36" y="3580.7" id="order"><tspan id="order">Order</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1619.3" y="4214.41" systemLanguage="af" id="family-af"><tspan id="family-af">Familie</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="ban" id="family-ban"><tspan id="family-ban">Kaluwarga</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="br" id="family-br"><tspan id="family-br">Kerentiad</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="bs" id="family-bs"><tspan id="family-bs">Porodica</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="cs" id="family-cs"><tspan id="family-cs">čeleď</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="de" id="family-de"><tspan id="family-de">Gattung</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="en" id="family-en"><tspan id="family-en">Family</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="es" id="family-es"><tspan id="family-es">Familia</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="fr" id="family-fr"><tspan id="family-fr">Famille</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="gl" id="family-gl"><tspan id="family-gl">Familia</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="ku" id="family-ku"><tspan id="family-ku">Famîle</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="la" id="family-la"><tspan id="family-la">Familia</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="my" id="family-my"><tspan id="family-my">မျိုးရင်း</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="si" id="family-si"><tspan id="family-si">කුලය</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="sk" id="family-sk"><tspan id="family-sk">čeľaď</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="tl" id="family-tl"><tspan id="family-tl">Pamilya</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="uz" id="family-uz"><tspan id="family-uz">Oila</tspan></text>
+   <text x="1619.3" y="4214.41" systemLanguage="xmf" id="family-xmf"><tspan id="family-xmf">ფანია</tspan></text>
+   <text x="1619.3" y="4214.41" id="family"><tspan id="family">Family</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1626.27" y="4850.57" systemLanguage="af" id="genus-af"><tspan id="genus-af">Genus</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="ban" id="genus-ban"><tspan id="genus-ban">Génus</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="br" id="genus-br"><tspan id="genus-br">Genad</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="bs" id="genus-bs"><tspan id="genus-bs">Rod</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="cs" id="genus-cs"><tspan id="genus-cs">rod</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="de" id="genus-de"><tspan id="genus-de">Ordnung</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="en" id="genus-en"><tspan id="genus-en">Genus</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="es" id="genus-es"><tspan id="genus-es">Género</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="fr" id="genus-fr"><tspan id="genus-fr">Genre</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="gl" id="genus-gl"><tspan id="genus-gl">Xénero</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="ku" id="genus-ku"><tspan id="genus-ku">Cins</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="la" id="genus-la"><tspan id="genus-la">Genus</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="my" id="genus-my"><tspan id="genus-my">မျိုးစု</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="si" id="genus-si"><tspan id="genus-si">ගණය</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="sk" id="genus-sk"><tspan id="genus-sk">rod</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="tl" id="genus-tl"><tspan id="genus-tl">Genus</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="uz" id="genus-uz"><tspan id="genus-uz">Urugʻ</tspan></text>
+   <text x="1626.27" y="4850.57" systemLanguage="xmf" id="genus-xmf"><tspan id="genus-xmf">გვარი</tspan></text>
+   <text x="1626.27" y="4850.57" id="genus"><tspan id="genus">Genus</tspan></text>
+  </switch>
+
+  <switch>
+   <text x="1627.68" y="5485.5" systemLanguage="af" id="species-af"><tspan id="species-af">Spesie</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="ban" id="species-ban"><tspan id="species-ban">Spésiés</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="br" id="species-br"><tspan id="species-br">Spesad</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="bs" id="species-bs"><tspan id="species-bs">Vrsta</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="cs" id="species-cs"><tspan id="species-cs">druh</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="de" id="species-de"><tspan id="species-de">Art</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="en" id="species-en"><tspan id="species-en">Species</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="es" id="species-es"><tspan id="species-ed">Especie</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="fr" id="species-fr"><tspan id="species-ed">Espèce</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="gl" id="species-gl"><tspan id="species-ed">Especie</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="ku" id="species-ku"><tspan id="species-ed">Cure</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="la" id="species-la"><tspan id="species-la">Species</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="my" id="species-my"><tspan id="species-my">မျိုးစိတ်</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="si" id="species-si"><tspan id="species-si">විශේෂය</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="sk" id="species-sk"><tspan id="species-sk">druh</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="tl" id="species-tl"><tspan id="species-tl">Espesye</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="uz" id="species-uz"><tspan id="species-uz">Tur</tspan></text>
+   <text x="1627.68" y="5485.5" systemLanguage="xmf" id="species-xmf"><tspan id="species-xmf">გვარობა</tspan></text>
+   <text x="1627.68" y="5485.5" id="species"><tspan id="species">Species</tspan></text>
+  </switch>
+
+ </g>
+</svg>

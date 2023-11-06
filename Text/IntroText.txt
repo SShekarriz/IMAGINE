@@ -1,0 +1,47 @@
+The human gut is home to hundreds of species of microbes. These are mostly
+bacteria and this community of microbes in the microbiome. Although we all have
+the same general types of bacteria, each of us has our own unique microbiome.
+There are as many bacterial cells in our gut as we have human cells and that
+play important roles in human health.
+
+* Help to break down the food we eat
+* Produce vitamins that we require
+* Train and maintain our immune system
+* They are the first line of defense against infection
+
+MAGIC is IMAGINE's main cohort study. With the goal of recruiting 8,000
+subjects, this project will study how three important variables (genes, diet and
+mental health) impact the gut microbiome in persons with inflammatory bowel
+disease (IBD) and irritable bowel syndrome (IBS) and in turn how together they
+impact the disease course. 
+
+A key part of MAGIC is to generate microbiome profiles for each individual.
+
+### How do we study microbiome and generate these microbiome profiles?
+
+Each type of bacteria (Species) has a unique genetic "barcode" in the bacteria's
+DNA. To determine the mircobiome composition, we isolate the DNA from your stool
+sample and isolate and sequence these bacterial DNA barcodes. No human DNA is
+sequenced, just these bacterial barcodes. We generate 10,000 - 50,000 barcode
+sequences per sample. These sequences are then analyzed to identify each species
+and how many of each species is present.
+
+Think of the bacteria in your gut like a jar of jelly beans. The barcode tells
+us which colour each jelly bean is, and the number of times we sequence that
+barcode tells us how many of this specific bacteria are present. This allows us
+to sort the bacteria into species (colors) and generate the "taxonomic bar
+charts" like yours on the first page of this document.
+
+JELLY BEAN IMAGE
+
+As there are hundreds of species in a sample, we quickly run out of colors! So
+to make the charts we often group closely related species together at the Genus
+level (contains multiple species) or Family level (contains multiple Genera
+(plural of genus)).
+
+These microbiome profiles are just the start of the analysis. This information
+will be used to compare profiles between healthy controls and patients, how an
+individual's microbiome changes with health status and identify associations of
+specific microbes with disease. Understanding these associations between our
+microbes and health/disease will lead to new treatments targeting the microbiome
+-- reducing the 'bad' bacteria and increasing the 'good' bacteria.

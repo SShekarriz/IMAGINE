@@ -23,9 +23,9 @@ library(ggpubr)
 load('data/all_processed.RData')
 
 ### AUTOMATICALLY SET THE SAMPLE ###
-samp = 'IMG112'
+
 my_df = filter(ps_df, Study_ID == samp)
-img = png::readPNG('img/gut_for_word_cloud.png')
+gut_img = png::readPNG('img/gut_for_word_cloud.png')
 ```
 
 \section{Introduction}
