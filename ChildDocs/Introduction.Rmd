@@ -1,0 +1,61 @@
+\section{Introduction}
+
+The human gut is home to hundreds of species of microbes, mostly bacteria. In
+fact, the human gut has as many bacterial cells as there are human cells in your
+whole body! This microbial community is known as your 'gut microbiome'.
+
+The gut microbiome has several very important roles to play in keeping us
+healthy. It helps us to break down and digest the food that we eat, produces
+vitamins that we require, trains and maintains our immune system, and serves as
+the first line of defense against infection from bacteria that could do us harm.
+
+We are still very much at the beginning of understanding all the things the gut
+microbiome does, how our actions and environment affect it, and how we can use
+it to keep people healthier and living longer. The MAGIC study (a sub-study of
+the IMAGINE study that you are participating in) is an ambitious project to
+improve our understanding of how three important variables (genes, diet, and
+mental health) impact the gut microbiome in people with inflammatory bowel
+disease (IBD) and irritable bowel syndrome (IBS), and in turn how all four
+factors together impact the disease course.
+
+\subsection{Studying the microbiome}
+
+A key component of the MAGIC study is generating microbiome profiles for each
+participant in the study. So, how do we do that?
+
+Bacteria, just like plants and animals, can be grouped together into closely
+related groups called "species". Those species can then be grouped together into
+bigger groups called "genera" (singular: genus), and genera can be grouped
+together into families, and so on up the tree of life. 
+
+TAXONOMIC HIERARCHY IMAGE
+
+Each bacterial species
+has a unique genetic "barcode" that can be used to identify it. To determine the
+composition of each sample's microbiome, we extract the DNA from your stool
+sample and then isolate and sequence these bacterial DNA barcodes. We don't
+sequence any human DNA, just the bacterial barcodes. We generate 10,000 to
+50,000 barcode sequences per sample. Each sequence is then labeled with its
+taxonomic identity (which species, genus, family, etc. it belongs to) and the
+number of bacteria present in each species is counted.
+
+You can think of the bacteria in your gut like a jar of jelly beans. The barcode
+tells us what colour each jelly bean is, and the number of times we see that
+barcode in our sequences tells us how many jelly beans there are of that colour.
+This allows us to sort the bacteria into species and generate the "taxonomic bar
+chart" you'll see in this document.
+
+JELLY BEAN IMAGE
+
+As there are hundreds of species in a sample, we quickly run out of colours!
+Therefore, we will use the categories at the genus or family level, and also
+only display the bacteria that are abundant enough to show up clearly on the
+chart.
+
+These microbiome profiles are only the beginning. We use the information in them
+to compare profiles between healthy controls and people with IBD/IBS, and to
+investigate ways that a person's microbiome changes with their health status. We
+also try to identify individual microbes that might be associated with specific
+illnesses. Understanding these associations between our microbes and our health
+will lead to new treatments that target the microbiome directly: increasing
+"good" bacteria and decreasing "bad" bacteria.
