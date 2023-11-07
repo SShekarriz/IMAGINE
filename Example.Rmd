@@ -49,11 +49,11 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 
 ```{=latex}
 \begin{multicols}{2}
-[\textbf{Your Sample}]
 ```
 
+\section{Your Sample}
 \begin{small}
-This bar chart shows your personal fecal bacterial community. 
+This **taxonomic bar chart** shows your personal fecal bacterial community. 
 Bacteria are grouped into \textbf{families} based on how closely related
 they are.
 
@@ -63,6 +63,8 @@ bacteria grouped together as "Other". Next to it is a chart showing
 the average community of all the people who participated in the study,
 and across the bottom are four anonymous individuals chosen to show
 the range of variation in this study. As you can see, it's quite wide!
+
+Below are the names of the most common bacterial families found in this study.
 \end{small}
 \columnbreak
 
@@ -115,7 +117,7 @@ which family that genus comes from.
 \vspace*{\fill}
 \section{You Are Here $\boldsymbol{\rightarrow}$}
 \begin{small}
-There are over 1,000 people participating in this study so far! We have 
+There are nearly 4,000 people participating in this study so far! We have 
 graphed everyone together based on how similar or different their gut
 microbiomes were. In the next graph, points that are closer together
 are more similar to each other, and points that are farther apart are
@@ -146,7 +148,7 @@ my_bray_plt
 Everyone's microbiome is different. In your microbiome, the four most
 abundant bacterial families were \textit{Lachnospiraceae}, 
 \textit{Ruminococcaceae}, \textit{Bacteroidaceae}, and 
-\textit{Oscillospiraceae*}. Here is a little bit of information
+\textit{Oscillospiraceae}. Here is a little bit of information
 about what functions these four familes perform in the gut.
 
 

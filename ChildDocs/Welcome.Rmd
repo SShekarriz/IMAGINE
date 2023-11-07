@@ -8,7 +8,8 @@ wcplt_cov
 ```
 \end{centering}
 
-Welcome to your IMAGINE microbiome report! In this report, you will find an
+Welcome to your \textbf{\color{Cerulean}MAGIC} \textbf{/
+\color{RedOrange}IMAGINE} microbiome report! In this report, you will find an
 introduction to the human fecal microbiome, a description of your personal
 microbiome, and some more detailed information about the specific bacteria that
 were abundant in your sample.

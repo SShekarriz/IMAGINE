@@ -1,7 +1,7 @@
 \section{Introduction}
 
 The human gut is home to hundreds of species of microbes, mostly bacteria. In
-fact, the human gut has as many bacterial cells as there are human cells in your
+fact, your gut contains as many bacterial cells as there are human cells in your
 whole body! This microbial community is known as your 'gut microbiome'.
 
 The gut microbiome has several very important roles to play in keeping us
@@ -11,28 +11,28 @@ the first line of defense against infection from bacteria that could do us harm.
 
 We are still very much at the beginning of understanding all the things the gut
 microbiome does, how our actions and environment affect it, and how we can use
-it to keep people healthier and living longer. The MAGIC study (a sub-study of
-the IMAGINE study that you are participating in) is an ambitious project to
+it to keep people healthier and living longer. The
+\textbf{\color{Cerulean}MAGIC} study (a sub-study of the
+\textbf{\color{RedOrange}IMAGINE} project that you are participating in) is an
 \begin{wrapfigure}{r}{0.18\textwidth}
-\begin{center}
 \includegraphics[width=0.18\textwidth]{img/Biological_classification_L_Pengo_vflip.png}
-\end{center}
 \end{wrapfigure}
-improve our understanding of how three important variables (genes, diet, and
-mental health) impact the gut microbiome in people with inflammatory bowel
+ambitious project that will improve our understanding of how three important
+variables (genes, diet, and mental health) impact the gut microbiome in people
+with inflammatory bowel
 disease (IBD) and irritable bowel syndrome (IBS), and in turn how all four
 factors together impact the disease course.
 
 
 \subsection{Studying the microbiome}
 
-A key component of the MAGIC study is generating microbiome profiles for each
-participant in the study. So, how do we do that?
+A key component of the \textbf{\color{Cerulean}MAGIC} study is generating
+microbiome profiles for each participant. So, how do we do that?
 
-Bacteria, just like plants and animals, can be grouped together into closely
-related groups called **species**. Those species can then be grouped together
-into bigger groups called **genera** (singular: genus), and genera can be
-grouped together into **families**, and so on up the tree of life. 
+Bacteria, just like plants and animals, can be classified into closely related
+groups called **species**. Those species can then be classified into bigger
+groups called **genera** (singular: genus), and genera can be classified into
+**families**, and so on up the tree of life. 
 
 Each bacterial species has a unique genetic "barcode" that can be used to
 identify it. To determine the composition of each sample's microbiome, we
@@ -49,7 +49,9 @@ barcode in our sequences tells us how many jelly beans there are of that colour.
 This allows us to sort the bacteria into species and generate the "taxonomic bar
 chart" you'll see in this document.
 
-JELLY BEAN IMAGE
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/jellybeans.png}
+\end{center}
 
 As there are hundreds of species in a sample, we quickly run out of colours!
 Therefore, we will use the categories at the genus or family level, and also
