@@ -5,6 +5,7 @@ output:
             in_header: header.tex
             before_body: body.tex
         keep_tex: true
+colorlinks: true
 date: "2023-05-26"
 ---
 

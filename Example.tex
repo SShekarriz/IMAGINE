@@ -1,6 +1,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
 ]{article}
@@ -75,7 +76,6 @@
 \usepackage{eso-pic}
 \usepackage{cuted}
 \usepackage{multicol}
-\usepackage{xcolor}
 \usepackage{wrapfig}
 \usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
@@ -128,7 +128,11 @@ keepaspectratio]{img/logo_for_background.png}%
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  hidelinks,
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
 \author{}
@@ -160,7 +164,7 @@ specific bacteria that were abundant in your sample.
 \section{Introduction}
 
 The human gut is home to hundreds of species of microbes, mostly
-bacteria. In fact, the human gut has as many bacterial cells as there
+bacteria. In fact, your gut contains as many bacterial cells as there
 are human cells in your whole body! This microbial community is known as
 your `gut microbiome'.
 
@@ -172,9 +176,12 @@ bacteria that could do us harm.
 
 We are still very much at the beginning of understanding all the things
 the gut microbiome does, how our actions and environment affect it, and
-how we can use it to keep people healthier and living longer. The MAGIC
-study (a sub-study of the IMAGINE study that you are participating in)
-is an ambitious project to
+how we can use it to keep people healthier and living longer. The
+\textbf{\color{Cerulean}MAGIC} study (a sub-study of the
+\textbf{\color{RedOrange}IMAGINE} study that you are participating in)
+is an ambitious project that will improve our understanding of how three
+important variables (genes, diet, and mental health) impact the gut
+microbiome in people with inflammatory bowel
 
 \begin{wrapfigure}{r}{0.18\textwidth}
 \begin{center}
@@ -182,10 +189,8 @@ is an ambitious project to
 \end{center}
 \end{wrapfigure}
 
-improve our understanding of how three important variables (genes, diet,
-and mental health) impact the gut microbiome in people with inflammatory
-bowel disease (IBD) and irritable bowel syndrome (IBS), and in turn how
-all four factors together impact the disease course.
+disease (IBD) and irritable bowel syndrome (IBS), and in turn how all
+four factors together impact the disease course.
 
 \subsection{Studying the microbiome}
 
