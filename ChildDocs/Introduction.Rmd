@@ -14,9 +14,6 @@ microbiome does, how our actions and environment affect it, and how we can use
 it to keep people healthier and living longer. The
 \textbf{\color{Cerulean}MAGIC} study (a sub-study of the
 \textbf{\color{RedOrange}IMAGINE} project that you are participating in) is an
-\begin{wrapfigure}{r}{0.18\textwidth}
-\includegraphics[width=0.18\textwidth]{img/Biological_classification_L_Pengo_vflip.png}
-\end{wrapfigure}
 ambitious project that will improve our understanding of how three important
 variables (genes, diet, and mental health) impact the gut microbiome in people
 with inflammatory bowel
@@ -29,6 +26,9 @@ factors together impact the disease course.
 A key component of the \textbf{\color{Cerulean}MAGIC} study is generating
 microbiome profiles for each participant. So, how do we do that?
 
+\begin{wrapfigure}{r}{0.18\textwidth}
+\includegraphics[width=0.18\textwidth]{img/Biological_classification_L_Pengo_vflip.png}
+\end{wrapfigure}
 Bacteria, just like plants and animals, can be classified into closely related
 groups called **species**. Those species can then be classified into bigger
 groups called **genera** (singular: genus), and genera can be classified into

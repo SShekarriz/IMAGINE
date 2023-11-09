@@ -69,7 +69,6 @@
 %}
 
 \usepackage{lipsum}
-\usepackage{graphicx}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \usepackage{geometry}
@@ -82,24 +81,40 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
 \usepackage[fontsize=12]{scrextend}
+
+\fancypagestyle{cov}{
+	\fancyhf{}
+	%\geometry{top=75pt}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+	\chead{\includegraphics[width=\textwidth]{img/magic_logo_cropped.png}}
+	\fancyhead[R]{}
+	\cfoot{\includegraphics[width=\textwidth]{img/logo_banner_cropped.png}}
+	\fancyfoot[R]{}
+}
+
+
+
 \fancyhf{}
 %\setlength\voffset{-29pt}
 %\geometry{hmargin=0pt}
-\newcommand\BackgroundPic{%
-\put(0,0){%
-\parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-\includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{img/logo_for_background.png}%
-\vfill
-}}}
+%\newcommand\BackgroundPic{%
+%\put(0,0){%
+%\parbox[b][\paperheight]{\paperwidth}{%
+%\vfill
+%\centering
+%\includegraphics[width=\paperwidth,height=\paperheight,%
+%keepaspectratio]{img/logo_for_background.png}%
+%\vfill
+%}}}
+\geometry{top=75pt}
 \setlength{\columnsep}{1cm}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\setlength\headheight{84.0pt}
-\addtolength{\textheight}{-84.0pt}
-\chead{\includegraphics[width=\textwidth]{img/logo_banner_cropped.png}}
+\setlength\headheight{92.0pt}
+\addtolength{\textheight}{-92.0pt}
+\addtolength{\topmargin}{-18pt}
+\chead{\includegraphics[width=\textwidth]{img/magic_logo_cropped.png}}
 \pagenumbering{gobble}
 \fancyhead[R]{}
 
@@ -142,25 +157,29 @@ keepaspectratio]{img/logo_for_background.png}%
 
 %\AddToShipoutPicture*{\BackgroundPic}
 
-\vspace{2cm}
+\begin{titlepage}
+
+\thispagestyle{cov}
+
+\vspace*{20pt}
+
+\begin{center}
 
 \section{Welcome to Your Microbiome!}
 
-\begin{centering}
-
-
-\begin{center}\includegraphics{Example_files/figure-latex/WdCldLrgDisplay-1} \end{center}
-\end{centering}
+\includegraphics{img/cover_image.png}
 
 Welcome to your \textbf{\color{Cerulean}MAGIC} \textbf{/
-\color{RedOrange}IMAGINE} microbiome report! In this report, you will
-find an introduction to the human fecal microbiome, a description of
-your personal microbiome, and some more detailed information about the
-specific bacteria that were abundant in your sample.
+\color{RedOrange}IMAGINE} microbiome report! In this report, you will find an
+introduction to the human fecal microbiome, a description of your personal
+microbiome, and some more detailed information about the specific bacteria that
+were abundant in your sample.
+
+\end{center}
+
+\end{titlepage}
 
 \pagenumbering{arabic}
-
-\newpage
 
 \section{Introduction}
 
@@ -180,13 +199,7 @@ the gut microbiome does, how our actions and environment affect it, and
 how we can use it to keep people healthier and living longer. The
 \textbf{\color{Cerulean}MAGIC} study (a sub-study of the
 \textbf{\color{RedOrange}IMAGINE} project that you are participating in)
-is an
-
-\begin{wrapfigure}{r}{0.18\textwidth}
-\includegraphics[width=0.18\textwidth]{img/Biological_classification_L_Pengo_vflip.png}
-\end{wrapfigure}
-
-ambitious project that will improve our understanding of how three
+is an ambitious project that will improve our understanding of how three
 important variables (genes, diet, and mental health) impact the gut
 microbiome in people with inflammatory bowel disease (IBD) and irritable
 bowel syndrome (IBS), and in turn how all four factors together impact
@@ -197,6 +210,10 @@ the disease course.
 A key component of the \textbf{\color{Cerulean}MAGIC} study is
 generating microbiome profiles for each participant. So, how do we do
 that?
+
+\begin{wrapfigure}{r}{0.18\textwidth}
+\includegraphics[width=0.18\textwidth]{img/Biological_classification_L_Pengo_vflip.png}
+\end{wrapfigure}
 
 Bacteria, just like plants and animals, can be classified into closely
 related groups called \textbf{species}. Those species can then be

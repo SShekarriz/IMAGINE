@@ -1,4 +1,15 @@
+```{=latex}
+\begin{titlepage}
+
+\thispagestyle{cov}
+
+\vspace*{20pt}
+
+\begin{center}
+
 \section{Welcome to Your Microbiome!}
+
+\includegraphics{img/cover_image.png}
 
 Welcome to your \textbf{\color{Cerulean}MAGIC} \textbf{/
 \color{RedOrange}IMAGINE} microbiome report! In this report, you will find an
@@ -6,3 +17,7 @@ introduction to the human fecal microbiome, a description of your personal
 microbiome, and some more detailed information about the specific bacteria that
 were abundant in your sample.
 
+\end{center}
+
+\end{titlepage}
+```

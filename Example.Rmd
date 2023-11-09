@@ -32,13 +32,11 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 ```{r, child = 'ChildDocs/BrayPlt.Rmd'}
 ```
 
-\vspace{2cm}
-```{r, child = 'ChildDocs/Welcome.Rmd'}
+```{r, child = 'ChildDocs/Title.Rmd'}
 ```
 
-\pagenumbering{arabic}
 
-\newpage
+\pagenumbering{arabic}
 
 ```{r, child = 'ChildDocs/Introduction.Rmd'}
 ```
