@@ -1,0 +1,9 @@
+\subsection{Bifidobacteriaceae}
+
+\begin{small}
+Bifidobacteriaceae are commonly found in the gut and are known for their ability
+to produce lactic acid, which helps to maintain an acidic environment in the gut
+that is unfavorable to harmful bacteria. These bacteria are also involved in the
+breakdown of complex carbohydrates and the production of SCFAs such as acetate
+and lactate, which provide energy for the body and improve gut health.
+\end{small}

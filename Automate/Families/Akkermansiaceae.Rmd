@@ -1,0 +1,10 @@
+\subsection{Akkermansiaceae}
+
+\begin{small}
+Akkermansiaceae is a family of bacteria found in the gut that is associated with
+the production of the mucin layer, which protects against harmful pathogens and
+maintains a healthy gut environment. These bacteria are also involved in the
+breakdown of complex carbohydrates and the production of SCFAs such as acetate
+and propionate, which have anti-inflammatory properties and may improve
+metabolic health.
+\end{small}

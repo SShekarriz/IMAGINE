@@ -1,0 +1,11 @@
+\subsection{Bacteroidaceae}
+
+\begin{small}
+Bacteroidaceae is a family of bacteria found in the gut that are involved in the
+breakdown of complex carbohydrates, such as dietary fibers and resistant
+starches. These bacteria produce enzymes that can break down plant-based foods,
+making the nutrients more accessible to the body. Bacteroidaceae also play a
+role in regulating the immune system and maintaining gut health, and their
+presence has been associated with a reduced risk of inflammatory bowel diseases.
+\end{small}
+

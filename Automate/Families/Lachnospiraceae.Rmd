@@ -1,0 +1,11 @@
+\subsection{Lachnospiraceae}
+
+\begin{small}
+This family of bacteria is found in the gut and plays an important role in the
+breakdown of complex carbohydrates. Lachnospiraceae are known for their ability
+to ferment a variety of dietary fibers, producing short-chain fatty acids
+(SCFAs) such as butyrate, propionate, and acetate. These SCFAs provide an energy
+source for the body, improve gut health, and have anti-inflammatory properties.
+Research has also linked Lachnospiraceae to improved metabolic health and a
+reduced risk of obesity.
+\end{small}

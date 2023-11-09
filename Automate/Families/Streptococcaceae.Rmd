@@ -1,0 +1,9 @@
+\subsection{Streptococcaceae}
+
+\begin{small}
+Streptococcaceae is a family of bacteria commonly found in the mouth and gut
+that have a variety of beneficial roles. Some species of Streptococcaceae are
+involved in the production of essential vitamins such as folate and vitamin K,
+while others are involved in the breakdown of complex carbohydrates and the
+production of SCFAs.
+\end{small}

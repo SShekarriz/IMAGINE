@@ -1,0 +1,8 @@
+\subsection{Christensenellaceae}
+
+\begin{small}
+Members of the Christensenellaceae family of bacteria are associated with a
+healthy gut microbiome and have been linked to a reduced risk of obesity. These
+bacteria may play a role in regulating the immune system and improving gut
+health.
+\end{small}

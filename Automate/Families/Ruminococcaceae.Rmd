@@ -1,0 +1,9 @@
+\subsection{Ruminococcaceae}
+
+\begin{small}
+Ruminococcaceae are involved in the fermentation of dietary fiber and the
+production of SCFAs. These bacteria also play a role in regulating the immune
+system and maintaining gut health. Research has shown that reduced levels of
+Ruminococcaceae in the gut are associated with inflammatory bowel diseases such
+as Crohn's disease and ulcerative colitis.
+\end{small}

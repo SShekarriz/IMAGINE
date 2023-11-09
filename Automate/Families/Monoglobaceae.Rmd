@@ -1,0 +1,8 @@
+\subsection{Monoglobaceae}
+
+\begin{small}
+Members of the Monoglobaceae family of bacteria are involved in the fermentation
+of dietary fiber and the production of SCFAs, which provide energy for the body
+and improve gut health. These bacteria may also play a role in regulating the
+immune system and maintaining a healthy gut microbiome.
+\end{small}

@@ -1,0 +1,9 @@
+\subsection{Tannerellaceae}
+
+\begin{small}
+Tannerellaceae is a family of bacteria that includes several species associated
+with improved gut health. These bacteria are involved in the breakdown of
+complex carbohydrates and the production of SCFAs such as butyrate, which has
+been shown to have anti-inflammatory properties and protect against colon
+cancer.
+\end{small}

@@ -1,0 +1,9 @@
+\subsection{Erysipelatoclostridiaceae}
+
+\begin{small}
+Members of the Erysipelatoclostridiaceae family of bacteria are known for their
+ability to produce beneficial compounds such as butyrate, which has been shown
+to promote gut health and have anti-inflammatory properties. Some species of
+Erysipelatoclostridiaceae are also involved in the degradation of complex
+carbohydrates, producing SCFAs that provide energy for the body.
+\end{small}

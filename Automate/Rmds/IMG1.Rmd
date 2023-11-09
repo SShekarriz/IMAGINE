@@ -1,0 +1,195 @@
+---
+output: 
+    pdf_document:
+        includes:
+            in_header: header.tex
+            before_body: body.tex
+        keep_tex: true
+colorlinks: true
+date: "2023-05-26"
+---
+
+```{r Setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(phyloseq)
+library(AfterSl1p)
+library(ggwordcloud)
+library(cowplot)
+library(ggpubr)
+load('data/all_processed.RData')
+
+# set the sample
+samp = 'IMG1'
+my_df = filter(ps_df, Study_ID == samp)
+gut_img_sml = png::readPNG('img/gut_for_word_cloud.png')
+gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
+```
+
+```{r, child = 'ChildDocs/WordCloudPlt.Rmd'}
+```
+
+```{r, child = 'ChildDocs/BrayPlt.Rmd'}
+```
+
+```{r, child = 'ChildDocs/Title.Rmd'}
+```
+
+
+\pagenumbering{arabic}
+
+```{r, child = 'ChildDocs/Introduction.Rmd'}
+```
+
+\newpage
+
+\vspace*{\fill}
+
+```{=latex}
+\begin{multicols}{2}
+```
+
+\section{Your Sample}
+\begin{small}
+This \textbf{taxonomic bar chart} shows your personal fecal bacterial community. 
+Bacteria are grouped into \textbf{families} based on how closely related
+they are.
+
+The bar chart is stacked from most abundant bacterial family on the 
+bottom, to least abundant on the top, with very low-abundance 
+bacteria grouped together as "Other". Next to it is a chart showing
+the average community of all the people who participated in the study,
+and across the bottom are four anonymous individuals chosen to show
+the range of variation in this study. As you can see, it's quite wide!
+
+Below are the names of the most common bacterial families found in this study.
+\end{small}
+\columnbreak
+
+
+```{r BarPlotDisplay, fig.width=5, fig.height=5}
+c1
+```
+
+```{=latex}
+\end{multicols}
+```
+```{r, fig.height=2, fig.width=6, fig.align='center'}
+plot_grid(legnd)
+```
+\vspace*{\fill}
+\newpage
+
+```{=latex}
+\begin{multicols}{2}
+\raggedcolumns
+```
+
+```{r WdCldSmlDisplay, fig.width=4, fig.height=5, fig.align='center'}
+wcplt
+```
+
+\columnbreak
+
+\vspace*{1cm}
+\section{$\boldsymbol{\leftarrow}$ More Detail}
+\begin{small}
+This word cloud shows your personal bacterial community at a finer 
+level of detail. Within each family, bacteria can be subdivided into 
+several \textbf{genera} (singular, \textbf{genus}). The size of each word
+represents the relative abundance of that genus, and the colour shows
+which family that genus comes from.
+\end{small}
+\vspace*{\fill}
+
+
+```{=latex}
+\end{multicols}
+```
+
+```{=latex}
+\begin{multicols}{2}
+\raggedcolumns
+```
+
+\vspace*{\fill}
+\section{You Are Here $\boldsymbol{\rightarrow}$}
+\begin{small}
+There are nearly 4,000 people participating in this study so far! We have 
+graphed everyone together based on how similar or different their gut
+microbiomes were. In the next graph, points that are closer together
+are more similar to each other, and points that are farther apart are
+more different. Your sample is shown in green. Remember that your 
+position in this graph doesn't say anything about how healthy your
+gut microbiome is. As we've seen above, there is a wide range of 
+normal variation in the human gut.
+\end{small}
+
+\vspace*{\fill}
+\columnbreak
+
+
+\vspace*{1cm}
+```{r BrayPlotDisplay, fig.wdith=3, fig.height=6, fig.align='center'}
+my_bray_plt
+```
+
+\vspace*{\fill}
+```{=latex}
+\end{multicols}
+```
+
+\newpage
+
+\section{Your Bacterial Families}
+
+Everyone's microbiome is different. In your microbiome, the four most
+abundant bacterial families were \textit{Lachnospiraceae}, 
+\textit{Ruminococcaceae}, \textit{Bacteroidaceae}, and 
+\textit{Oscillospiraceae}. Here is a little bit of information
+about what functions these four familes perform in the gut.
+
+
+\subsection{Lachnospiraceae}
+
+\begin{small}
+This family of bacteria is found in the gut and plays an important role in the 
+breakdown of complex carbohydrates. Lachnospiraceae are known for their ability 
+to ferment a variety of dietary fibers, producing short-chain fatty acids 
+(SCFAs) such as butyrate, propionate, and acetate. These SCFAs provide an energy
+source for the body, improve gut health, and have anti-inflammatory properties. 
+Research has also linked Lachnospiraceae to improved metabolic health and a 
+reduced risk of obesity.
+\end{small}
+
+\subsection{Ruminococcaceae}
+
+\begin{small}
+Ruminococcaceae are involved in the fermentation of dietary fiber and the 
+production of SCFAs. These bacteria also play a role in regulating the immune 
+system and maintaining gut health. Research has shown that reduced levels of 
+Ruminococcaceae in the gut are associated with inflammatory bowel diseases such 
+as Crohn's disease and ulcerative colitis.
+\end{small}
+
+\subsection{Bacteroidaceae}
+
+\begin{small}
+Bacteroidaceae is a family of bacteria found in the gut that are involved in the
+breakdown of complex carbohydrates, such as dietary fibers and resistant 
+starches. These bacteria produce enzymes that can break down plant-based foods, 
+making the nutrients more accessible to the body. Bacteroidaceae also play a 
+role in regulating the immune system and maintaining gut health, and their 
+presence has been associated with a reduced risk of inflammatory bowel diseases.
+\end{small}
+
+\subsection{Oscillospiraceae}
+
+\begin{small}
+Members of the Oscillospiraceae family of bacteria have been linked to improved 
+glucose metabolism and may have a role in regulating blood sugar levels. These 
+bacteria are involved in the breakdown of complex carbohydrates and the 
+production of SCFAs such as butyrate, which have been shown to improve gut 
+health and protect against inflammation.
+\end{small}
+

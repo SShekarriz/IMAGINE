@@ -1,0 +1,9 @@
+\subsection{Rikenellaceae}
+
+\begin{small}
+Rikenellaceae is a family of bacteria found in the gut that has been associated
+with the production of anti-inflammatory compounds and may help protect against
+metabolic disorders such as obesity and diabetes. These bacteria are involved in
+the fermentation of dietary fiber and the production of SCFAs such as butyrate
+and propionate.
+\end{small}

@@ -1,0 +1,11 @@
+\subsection{Enterobacteriaceae}
+
+\begin{small}
+Enterobacteriaceae is a family of bacteria commonly found in the gut that
+includes several pathogenic species such as Escherichia coli and Salmonella.
+However, some species of Enterobacteriaceae are beneficial to human health. For
+example, some strains of E. coli produce vitamin K2, which is important for bone
+health and may have other health benefits. Other species of Enterobacteriaceae
+are involved in the breakdown of complex carbohydrates and the production of
+SCFAs, which provide energy for the body and improve gut health.
+\end{small}

@@ -11,3 +11,7 @@ Rplots.pdf
 Feedback/*
 *.Rproj
 *.docx
+Automate/IMG*
+Automate/Pdfs/*
+Automate/data/*
+Automate/tmp*

@@ -1,0 +1,9 @@
+\subsection{Clostridiaceae}
+
+\begin{small}
+Clostridiaceae is a family of bacteria that includes several species that are
+beneficial to human health. These bacteria are involved in the fermentation of
+dietary fiber and the production of SCFAs, which provide energy for the body and
+improve gut health. Some species of Clostridiaceae have also been linked to a
+reduced risk of inflammatory bowel diseases.
+\end{small}
