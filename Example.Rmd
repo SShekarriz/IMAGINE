@@ -51,7 +51,7 @@ gut_img_lrg = png::readPNG('img/gut_for_word_cloud_cover.png')
 
 \section{Your Sample}
 \begin{small}
-This **taxonomic bar chart** shows your personal fecal bacterial community. 
+This \textbf{taxonomic bar chart} shows your personal fecal bacterial community. 
 Bacteria are grouped into \textbf{families} based on how closely related
 they are.
 

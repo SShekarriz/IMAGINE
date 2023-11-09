@@ -3,13 +3,15 @@
 
 \thispagestyle{cov}
 
-\vspace*{20pt}
+\vspace*{10pt}
 
 \begin{center}
 
 \section{Welcome to Your Microbiome!}
 
+\vspace*{5pt}
 \includegraphics{img/cover_image.png}
+\vspace*{10pt}
 
 Welcome to your \textbf{\color{Cerulean}MAGIC} \textbf{/
 \color{RedOrange}IMAGINE} microbiome report! In this report, you will find an
