@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.6)  9 NOV 2023 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.10)  10 NOV 2023 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -198,7 +198,7 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 ) (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/lipsum/lipsum.sty (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2023-11-01 L3 programming layer (loader) 
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-10-23 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2023-11-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box53
 ))
@@ -497,7 +497,7 @@ File: scrsize12pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (12pt)
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 123.
 ) (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2023-10-27 v7.01d Hypertext links for LaTeX
+Package: hyperref 2023-11-07 v7.01e Hypertext links for LaTeX
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/home/jcszamosi/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -538,7 +538,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \Hy@linkcounter=\count294
 \Hy@pagecounter=\count295
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2023-10-27 v7.01d Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2023-11-07 v7.01e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/home/jcszamosi/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -546,24 +546,24 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count296
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2023-10-27 v7.01d Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2023-11-07 v7.01e Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4051.
-Package hyperref Info: Hyper figures OFF on input line 4168.
-Package hyperref Info: Link nesting OFF on input line 4173.
-Package hyperref Info: Hyper index ON on input line 4176.
-Package hyperref Info: Plain pages OFF on input line 4183.
-Package hyperref Info: Backreferencing OFF on input line 4188.
+Package hyperref Info: Option `unicode' set `true' on input line 4054.
+Package hyperref Info: Hyper figures OFF on input line 4171.
+Package hyperref Info: Link nesting OFF on input line 4176.
+Package hyperref Info: Hyper index ON on input line 4179.
+Package hyperref Info: Plain pages OFF on input line 4186.
+Package hyperref Info: Backreferencing OFF on input line 4191.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4435.
+Package hyperref Info: Bookmarks ON on input line 4438.
 \c@Hy@tempcnt=\count297
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4773.
+LaTeX Info: Redefining \url on input line 4776.
 \XeTeXLinkMargin=\dimen180
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -573,13 +573,13 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 \Fld@menulength=\count298
 \Field@Width=\dimen181
 \Fld@charsize=\dimen182
-Package hyperref Info: Hyper figures OFF on input line 6052.
-Package hyperref Info: Link nesting OFF on input line 6057.
-Package hyperref Info: Hyper index ON on input line 6060.
-Package hyperref Info: backreferencing OFF on input line 6067.
-Package hyperref Info: Link coloring OFF on input line 6072.
-Package hyperref Info: Link coloring with OCG OFF on input line 6077.
-Package hyperref Info: PDF/A mode OFF on input line 6082.
+Package hyperref Info: Hyper figures OFF on input line 6055.
+Package hyperref Info: Link nesting OFF on input line 6060.
+Package hyperref Info: Hyper index ON on input line 6063.
+Package hyperref Info: backreferencing OFF on input line 6070.
+Package hyperref Info: Link coloring OFF on input line 6075.
+Package hyperref Info: Link coloring with OCG OFF on input line 6080.
+Package hyperref Info: PDF/A mode OFF on input line 6085.
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
@@ -590,7 +590,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2023-10-27 v7.01d Hyperref driver for pdfTeX
+File: hpdftex.def 2023-11-07 v7.01e Hyperref driver for pdfTeX
 (/home/jcszamosi/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
@@ -683,14 +683,14 @@ LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
 (Font)              scaled to size 17.28pt on input line 168.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
 (Font)              scaled to size 17.28pt on input line 168.
-<img/cover_image.png, id=48, 290.58563pt x 289.08pt>
+<img/cover_image.png, id=64, 290.58563pt x 289.08pt>
 File: img/cover_image.png Graphic file (type png)
 <use img/cover_image.png>
 Package pdftex.def Info: img/cover_image.png  used on input line 171.
 (pdftex.def)             Requested size: 290.5982pt x 289.09251pt.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 174.
-<img/magic_logo_cropped.png, id=50, 1780.40157pt x 367.3725pt>
+<img/magic_logo_cropped.png, id=66, 1780.40157pt x 367.3725pt>
 File: img/magic_logo_cropped.png Graphic file (type png)
 <use img/magic_logo_cropped.png>
 Package pdftex.def Info: img/magic_logo_cropped.png  used on input line 182.
@@ -702,7 +702,7 @@ Package fancyhdr Warning: \headheight is too small (92.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-9.27725pt}.
 
-<img/logo_banner_cropped.png, id=51, 3605.47pt x 610.28pt>
+<img/logo_banner_cropped.png, id=67, 3605.47pt x 610.28pt>
 File: img/logo_banner_cropped.png Graphic file (type png)
 <use img/logo_banner_cropped.png>
 Package pdftex.def Info: img/logo_banner_cropped.png  used on input line 182.
@@ -715,7 +715,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [1
 
 {/home/jcszamosi/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/jcszamosi/.TinyTeX/texmf-dist/fonts/enc/dvips/montserrat/zmo_bapnwu.enc} <./img/magic_logo_cropped.png> <./img/cover_image.png> <./img/logo_banner_cropped.png>]
-<img/Biological_classification_L_Pengo_vflip.png, id=61, 173.14688pt x 444.15938pt>
+<img/Biological_classification_L_Pengo_vflip.png, id=77, 173.14688pt x 444.15938pt>
 File: img/Biological_classification_L_Pengo_vflip.png Graphic file (type png)
 <use img/Biological_classification_L_Pengo_vflip.png>
 Package pdftex.def Info: img/Biological_classification_L_Pengo_vflip.png  used on input line 210.
@@ -736,7 +736,7 @@ Package fancyhdr Warning: \headheight is too small (92.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-9.27725pt}.
 
 [1 <./img/Biological_classification_L_Pengo_vflip.png>]
-<img/jellybeans.png, id=67, 363.60844pt x 115.93312pt>
+<img/jellybeans.png, id=83, 363.60844pt x 115.93312pt>
 File: img/jellybeans.png Graphic file (type png)
 <use img/jellybeans.png>
 Package pdftex.def Info: img/jellybeans.png  used on input line 243.
@@ -767,12 +767,12 @@ Underfull \hbox (badness 5403) in paragraph at lines 279--282
 \T1/Montserrat-TLF/regular/n/10.95 mon bac-te-rial fam-i-lies found in this
  []
 
-<Example_files/figure-latex/BarPlotDisplay-1.pdf, id=73, 361.35pt x 361.35pt>
+<Example_files/figure-latex/BarPlotDisplay-1.pdf, id=89, 361.35pt x 361.35pt>
 File: Example_files/figure-latex/BarPlotDisplay-1.pdf Graphic file (type pdf)
 <use Example_files/figure-latex/BarPlotDisplay-1.pdf>
 Package pdftex.def Info: Example_files/figure-latex/BarPlotDisplay-1.pdf  used on input line 283.
 (pdftex.def)             Requested size: 220.64925pt x 220.64925pt.
-<Example_files/figure-latex/unnamed-chunk-5-1.pdf, id=74, 433.62pt x 144.54pt>
+<Example_files/figure-latex/unnamed-chunk-5-1.pdf, id=90, 433.62pt x 144.54pt>
 File: Example_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 <use Example_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: Example_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 287.
@@ -789,7 +789,7 @@ Package fancyhdr Warning: \headheight is too small (92.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-9.27725pt}.
 
 [3 <./Example_files/figure-latex/BarPlotDisplay-1.pdf> <./Example_files/figure-latex/unnamed-chunk-5-1.pdf>]
-<Example_files/figure-latex/WdCldSmlDisplay-1.pdf, id=89, 289.08pt x 361.35pt>
+<Example_files/figure-latex/WdCldSmlDisplay-1.pdf, id=105, 289.08pt x 361.35pt>
 File: Example_files/figure-latex/WdCldSmlDisplay-1.pdf Graphic file (type pdf)
 <use Example_files/figure-latex/WdCldSmlDisplay-1.pdf>
 Package pdftex.def Info: Example_files/figure-latex/WdCldSmlDisplay-1.pdf  used on input line 294.
@@ -1288,7 +1288,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 315.
 
-<Example_files/figure-latex/BrayPlotDisplay-1.pdf, id=90, 469.755pt x 433.62pt>
+<Example_files/figure-latex/BrayPlotDisplay-1.pdf, id=106, 469.755pt x 433.62pt>
 File: Example_files/figure-latex/BrayPlotDisplay-1.pdf Graphic file (type pdf)
 <use Example_files/figure-latex/BrayPlotDisplay-1.pdf>
 Package pdftex.def Info: Example_files/figure-latex/BrayPlotDisplay-1.pdf  used on input line 332.
@@ -1330,9 +1330,14 @@ Package fancyhdr Warning: \headheight is too small (92.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-9.27725pt}.
 
 [5]
+<img/hearts.png, id=132, 963.6pt x 642.4803pt>
+File: img/hearts.png Graphic file (type png)
+<use img/hearts.png>
+Package pdftex.def Info: img/hearts.png  used on input line 410.
+(pdftex.def)             Requested size: 220.63821pt x 147.11052pt.
 File: img/magic_logo_cropped.png Graphic file (type png)
 <use img/magic_logo_cropped.png>
-Package pdftex.def Info: img/magic_logo_cropped.png  used on input line 391.
+Package pdftex.def Info: img/magic_logo_cropped.png  used on input line 415.
 (pdftex.def)             Requested size: 469.7395pt x 96.92722pt.
 
 Package fancyhdr Warning: \headheight is too small (92.0pt): 
@@ -1341,27 +1346,49 @@ Package fancyhdr Warning: \headheight is too small (92.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-9.27725pt}.
 
-[6] (./Example.aux)
+[6 <./img/hearts.png>]
+<img/caution_img.png, id=139, 1966.34625pt x 386.19281pt>
+File: img/caution_img.png Graphic file (type png)
+<use img/caution_img.png>
+Package pdftex.def Info: img/caution_img.png  used on input line 420.
+(pdftex.def)             Requested size: 234.87123pt x 46.12898pt.
+
+Underfull \hbox (badness 3049) in paragraph at lines 433--442
+\T1/Montserrat-TLF/regular/n/10.95 Every in-di-vid-ual pos-sesses a dis-tinct mi-cro-biome com-po-si-tion, in-flu-enced by a
+ []
+
+File: img/magic_logo_cropped.png Graphic file (type png)
+<use img/magic_logo_cropped.png>
+Package pdftex.def Info: img/magic_logo_cropped.png  used on input line 459.
+(pdftex.def)             Requested size: 469.7395pt x 96.92722pt.
+
+Package fancyhdr Warning: \headheight is too small (92.0pt): 
+(fancyhdr)                Make it at least 101.27725pt, for example:
+(fancyhdr)                \setlength{\headheight}{101.27725pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-9.27725pt}.
+
+[7 <./img/caution_img.png>] (./Example.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-01>
  ***********
 Package rerunfilecheck Info: File `Example.out' has not changed.
-(rerunfilecheck)             Checksum: EB1D6EE202B3554A215DF9205043D6D9;1624.
+(rerunfilecheck)             Checksum: 5AC9CB9221BA97FB2FFE3EF5EDA2EF48;2354.
  ) 
 Here is how much of TeX's memory you used:
- 13905 strings out of 476238
- 226332 string characters out of 5796668
+ 13935 strings out of 476238
+ 226983 string characters out of 5796667
  1934530 words of memory out of 5000000
- 35587 multiletter control sequences out of 15000+600000
+ 35612 multiletter control sequences out of 15000+600000
  734767 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,14n,107p,312b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,14n,107p,355b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/jcszamosi/.TinyTeX/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></home/jcszamosi/.TinyTeX/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></home/jcszamosi/.TinyTeX/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></home/jcszamosi/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb>
-Output written on Example.pdf (7 pages, 2737930 bytes).
+Output written on Example.pdf (8 pages, 3246584 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

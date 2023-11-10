@@ -193,3 +193,34 @@ production of SCFAs such as butyrate, which have been shown to improve gut
 health and protect against inflammation.
 \end{small}
 
+\vfill
+
+\hrule
+\vfill
+\section{Thank You!!}
+
+```{=latex}
+\begin{multicols}{2}
+\raggedcolumns
+```
+\vspace*{20pt}
+Thank you for taking part in the \textbf{\color{Cerulean}MAGIC}\textbf{ / \color{RedOrange}IMAGINE} study! The participation of people like you is
+essential to advancing our understanding of the microbiome and its role in
+health and disease.
+
+\columnbreak
+
+
+\begin{center}
+\includegraphics{img/hearts.png}
+\end{center}
+
+```{=latex}
+\end{multicols}
+```
+
+
+\newpage
+
+```{r, child = 'ChildDocs/Disclaimer.Rmd'}
+```
