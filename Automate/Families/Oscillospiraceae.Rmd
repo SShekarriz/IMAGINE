@@ -5,5 +5,5 @@ Members of the Oscillospiraceae family of bacteria have been linked to improved
 glucose metabolism and may have a role in regulating blood sugar levels. These
 bacteria are involved in the breakdown of complex carbohydrates and the
 production of SCFAs such as butyrate, which have been shown to improve gut
-health and protect against inflammation.
+health and protect against inflammation..
 \end{small}

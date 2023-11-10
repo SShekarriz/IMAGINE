@@ -1,6 +1,8 @@
 \subsection{Veillonellaceae}
 
+\begin{small}
 Veillonellaceae is a family of bacteria commonly found in the mouth and gut that
 have a variety of beneficial roles. Some species of Veillonellaceae are involved
 in the production of SCFAs, while others are involved in the breakdown of amino
-acids and the production of essential vitamins such as biotin.
+acids and the production of essential vitamins such as biotin..
+\end{small}

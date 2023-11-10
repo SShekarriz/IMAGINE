@@ -1,8 +1,8 @@
 \subsection{Eubacterium}
 
 \begin{small}
-Members of the [Eubacterium] coprostanoligenes group of bacteria are involved in
-the production of cholesterol-lowering compounds called coprostanol and
+"Members of the [Eubacterium] coprostanoligenes group of bacteria are involved
+in the production of cholesterol-lowering compounds called coprostanol and
 ursodeoxycholic acid. These bacteria may play a role in reducing the risk of
 heart disease and other conditions associated with high cholesterol levels.
 \end{small}

@@ -6,5 +6,5 @@ microbiome. These bacteria are involved in the breakdown of amino acids and
 fermentation of carbohydrates, producing short-chain fatty acids, gases, and
 other metabolites. Peptostreptococcaceae also play a role in the production of
 essential vitamins such as biotin and folate, and their presence has been linked
-to a healthy gut microbiome.
+to a healthy gut microbiome..
 \end{small}
